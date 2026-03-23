@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swastik — Gopadma | Pure Vedic Ghee, Oils & Millets</title>
+<meta name="description" content="Swastik Gopadma — A2 Bilona Ghee, Cold Pressed Oils, Bull Driven Oils, Organic Millets & Panchgavya Products from sacred Gir, Punganoor & Desi cows.">
+<script type="application/ld+json">
+{"@context":"https://schema.org/","@type":"LocalBusiness","name":"Swastik Gopadma","telephone":"+91-XXXXXXXXXX","address":{"@type":"PostalAddress","streetAddress":"Your Farm Address","addressLocality":"Your City","addressRegion":"Karnataka","postalCode":"570001","addressCountry":"IN"},"image":"https://swastik.com/logo.png","priceRange":"₹-₹₹₹","openingHours":"Mo-Sa 09:00-18:00"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+Devanagari:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --saffron:#E8891A;--saffron-light:#F5A832;--saffron-deep:#C4700A;
+  --gold:#C8960C;--gold-light:#E8B830;--gold-pale:#F5DFA0;
+  --cream:#FDF6E8;--cream-dark:#F5E8C8;--ivory:#FFFEF5;
+  --sandalwood:#8B5E3C;--sandalwood-dark:#5C3820;
+  --sacred-red:#9B2335;--forest:#2A5C2A;
+  --charcoal:#1A1208;--warm-gray:#6B5B45;--copper:#B87333;
+  --font-display:'Cinzel',serif;--font-devanagari:'Noto Serif Devanagari',serif;
+  --font-serif:'Cormorant Garamond',serif;--font-body:'EB Garamond',serif;
+  --shadow-warm:0 4px 32px rgba(200,150,12,.18);
+  --shadow-deep:0 8px 48px rgba(26,18,8,.25);
+  --border-gold:1px solid rgba(200,150,12,.3);
+  --tr:all .35s cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--cream);color:var(--charcoal);font-size:17px;line-height:1.7;overflow-x:hidden}
+::selection{background:var(--gold-pale);color:var(--sandalwood-dark)}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+/* ── ANIMATIONS ── */
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-18px) rotate(2deg)}}
+@keyframes shimmer{0%,100%{opacity:.3;transform:scale(1)}50%{opacity:.7;transform:scale(1.04)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:translateY(0)}}
+@keyframes gradShift{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(232,137,26,.4)}50%{box-shadow:0 0 0 12px rgba(232,137,26,0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes countdown{0%{transform:scale(1)}50%{transform:scale(1.06)}100%{transform:scale(1)}}
+
+/* ── LAYOUT ── */
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.section{padding:80px 0}
+.section-label{font-family:var(--font-display);font-size:.65rem;letter-spacing:.3em;color:var(--saffron);text-transform:uppercase;display:block;margin-bottom:.75rem}
+.section-title{font-family:var(--font-serif);font-size:clamp(2rem,5vw,3.5rem);font-weight:600;color:var(--sandalwood-dark);line-height:1.15}
+.gold-div{width:70px;height:3px;background:linear-gradient(90deg,var(--saffron),var(--gold));border-radius:2px;margin:1.2rem 0}
+.gold-div.center{margin:1.2rem auto}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+.reveal.vis{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+
+/* ── NAV ── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:68px;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;background:rgba(253,246,232,.96);backdrop-filter:blur(18px);border-bottom:var(--border-gold);transition:var(--tr)}
+#nav.scrolled{height:58px;box-shadow:var(--shadow-warm)}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.swastik-logo{width:42px;height:42px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--saffron),var(--gold));border-radius:50%;font-size:22px;color:white;box-shadow:0 2px 12px rgba(232,137,26,.4);flex-shrink:0;font-weight:bold;letter-spacing:-1px}
+.nav-wordmark{font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:var(--sandalwood-dark);letter-spacing:.12em}
+.nav-sub{font-size:.55rem;color:var(--saffron-deep);letter-spacing:.18em;font-family:var(--font-devanagari);display:block;line-height:1}
+.nav-links{display:flex;align-items:center;gap:1.5rem;list-style:none}
+.nav-links a{font-family:var(--font-display);font-size:.65rem;letter-spacing:.12em;color:var(--warm-gray);text-decoration:none;transition:var(--tr);text-transform:uppercase}
+.nav-links a:hover{color:var(--saffron)}
+.nav-cta{background:linear-gradient(135deg,var(--saffron),var(--gold));color:white!important;padding:7px 18px;border-radius:2px;font-weight:600!important;box-shadow:0 2px 10px rgba(232,137,26,.3)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:24px;height:2px;background:var(--sandalwood-dark);border-radius:1px;transition:var(--tr)}
+#main{padding-top:68px}
+
+/* ── HERO ── */
+#hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;background:linear-gradient(135deg,#1A0A00,#3D1C00,#8B3A00,#C4700A,#E8891A,#F5A832);background-size:400% 400%;animation:gradShift 14s ease infinite}
+.hero-bg{position:absolute;inset:0;background-image:radial-gradient(circle at 20% 20%,rgba(245,223,160,.07) 0,transparent 50%),url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23F5A832' fill-opacity='0.04'%3E%3Cpath d='M25 0L30 20H50L35 32L40 50L25 38L10 50L15 32L0 20H20Z'/%3E%3C/g%3E%3C/svg%3E")}
+.floating{position:absolute;inset:0;pointer-events:none}
+.fl{position:absolute;color:rgba(245,223,160,.12);font-family:var(--font-devanagari);animation:float 8s ease-in-out infinite;user-select:none}
+.fl:nth-child(1){top:8%;left:6%;font-size:4rem;animation-delay:0s}
+.fl:nth-child(2){top:15%;right:12%;font-size:1.8rem;animation-delay:2s}
+.fl:nth-child(3){bottom:20%;left:5%;font-size:2.5rem;animation-delay:4s}
+.fl:nth-child(4){bottom:30%;right:8%;font-size:3.5rem;animation-delay:1s}
+.fl:nth-child(5){top:50%;left:45%;font-size:1.2rem;animation-delay:3s}
+.hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;width:100%}
+.hero-left{animation:fadeUp 1s ease .2s both}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(245,223,160,.12);border:1px solid rgba(245,223,160,.28);color:var(--gold-pale);padding:5px 14px;border-radius:100px;font-size:.7rem;letter-spacing:.18em;font-family:var(--font-display);margin-bottom:1.5rem;backdrop-filter:blur(8px)}
+.hero-om{font-size:2.8rem;color:rgba(245,223,160,.55);font-family:var(--font-devanagari);display:block;line-height:1;margin-bottom:.4rem}
+.hero-title{font-family:var(--font-display);font-size:clamp(2.8rem,7vw,5rem);font-weight:900;color:white;line-height:1;letter-spacing:.04em;text-shadow:0 2px 40px rgba(0,0,0,.3)}
+.hero-title em{display:block;font-family:var(--font-serif);font-style:italic;font-size:.52em;color:var(--gold-pale);letter-spacing:.18em;font-weight:400;margin-bottom:.2rem}
+.hero-sub{font-family:var(--font-devanagari);font-size:1rem;color:rgba(255,255,255,.7);margin:.8rem 0 .4rem;letter-spacing:.1em}
+.hero-desc{font-size:1.1rem;color:rgba(255,255,255,.8);line-height:1.8;max-width:460px;margin:.8rem 0 1.8rem}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-p{background:linear-gradient(135deg,#FDF6E8,#F5DFA0);color:var(--sandalwood-dark);padding:14px 32px;border:none;border-radius:2px;font-family:var(--font-display);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:var(--tr);box-shadow:0 4px 24px rgba(0,0,0,.2);animation:pulse 3s ease infinite}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.3);animation:none}
+.btn-s{background:transparent;color:white;padding:14px 28px;border:1px solid rgba(255,255,255,.4);border-radius:2px;font-family:var(--font-display);font-size:.7rem;letter-spacing:.16em;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:var(--tr);backdrop-filter:blur(8px)}
+.btn-s:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+.social-proof{margin-top:1.8rem;display:flex;align-items:center;gap:1rem}
+.avatars{display:flex}
+.avatars span{width:34px;height:34px;border-radius:50%;border:2px solid rgba(245,223,160,.4);display:flex;align-items:center;justify-content:center;font-size:14px;background:linear-gradient(135deg,var(--sandalwood),var(--saffron-deep));margin-right:-8px}
+.sp-text{font-size:.82rem;color:rgba(255,255,255,.8);line-height:1.4}
+.sp-text strong{color:var(--gold-pale)}
+
+/* Hero Jar */
+.hero-right{display:flex;flex-direction:column;align-items:center;animation:fadeUp 1s ease .5s both}
+.jar-wrap{position:relative;width:300px;height:360px;display:flex;align-items:center;justify-content:center}
+.jar-glow{position:absolute;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(245,168,50,.35) 0,transparent 70%);animation:shimmer 4s ease infinite}
+.jar{position:relative;z-index:2;width:190px;height:268px;background:linear-gradient(145deg,#F5DFA0 0%,#E8C860 30%,#C8960C 60%,#9A7000 100%);border-radius:18px 18px 28px 28px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 20px 60px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.3);animation:float 6s ease-in-out infinite}
+.jar-lid{position:absolute;top:-16px;width:152px;height:32px;background:linear-gradient(135deg,#9A7000,#C8960C,#E8B830);border-radius:7px 7px 0 0;box-shadow:0 -3px 10px rgba(0,0,0,.2)}
+.jar-label{background:rgba(253,246,232,.95);width:132px;padding:14px 10px;border-radius:7px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.jar-label-om{font-family:var(--font-devanagari);font-size:1.8rem;color:var(--saffron);display:block;line-height:1;margin-bottom:3px}
+.jar-label-name{font-family:var(--font-display);font-size:.58rem;letter-spacing:.12em;color:var(--sandalwood-dark);font-weight:700;display:block}
+.jar-label-sub{font-family:var(--font-devanagari);font-size:.6rem;color:var(--warm-gray);display:block;margin-top:2px}
+.jar-shine{position:absolute;top:18px;left:18px;width:28px;height:74px;background:linear-gradient(180deg,rgba(255,255,255,.4) 0,transparent 100%);border-radius:14px;transform:rotate(-10deg)}
+.hero-pills{display:flex;gap:.6rem;margin-top:1.8rem;flex-wrap:wrap;justify-content:center}
+.hero-pill{background:rgba(245,223,160,.13);border:1px solid rgba(245,223,160,.22);color:var(--gold-pale);padding:5px 12px;border-radius:100px;font-size:.67rem;letter-spacing:.08em;font-family:var(--font-display)}
+
+/* Countdown */
+.countdown-box{background:rgba(0,0,0,.22);backdrop-filter:blur(18px);padding:14px 20px;border-radius:4px;border:1px solid rgba(245,223,160,.18);margin-top:1.8rem;text-align:center}
+.cd-label{font-family:var(--font-display);font-size:.6rem;letter-spacing:.25em;color:var(--gold-pale);display:block;margin-bottom:10px}
+.cd-timer{display:flex;gap:.8rem;justify-content:center;align-items:center}
+.cd-unit{text-align:center}
+.cd-num{font-family:var(--font-display);font-size:1.8rem;font-weight:900;color:white;display:block;line-height:1;animation:countdown 1s ease-in-out infinite}
+.cd-lbl{font-size:.55rem;color:rgba(255,255,255,.55);letter-spacing:.14em;font-family:var(--font-display)}
+.cd-sep{font-size:1.4rem;color:var(--saffron-light);padding-bottom:6px}
+.waitlist-row{margin-top:1.2rem;display:flex;gap:0;max-width:380px}
+.waitlist-row input{flex:1;padding:12px 16px;background:rgba(255,255,255,.1);border:1px solid rgba(245,223,160,.3);border-right:none;border-radius:2px 0 0 2px;color:white;font-family:var(--font-body);font-size:.88rem;outline:none;backdrop-filter:blur(8px)}
+.waitlist-row input::placeholder{color:rgba(255,255,255,.45)}
+.waitlist-row button{background:linear-gradient(135deg,var(--saffron),var(--gold));color:white;padding:12px 18px;border:none;border-radius:0 2px 2px 0;cursor:pointer;font-family:var(--font-display);font-size:.65rem;letter-spacing:.14em;font-weight:700;white-space:nowrap;transition:var(--tr)}
+
+/* ── SWASTIK SYMBOL FEATURE SECTION ── */
+#swastik-banner{background:linear-gradient(135deg,var(--sandalwood-dark) 0%,#3D2010 100%);padding:50px 0;text-align:center;overflow:hidden;position:relative}
+#swastik-banner::before{content:'卐';position:absolute;left:-80px;top:50%;transform:translateY(-50%);font-size:350px;color:rgba(255,255,255,.03);font-weight:bold;line-height:1}
+#swastik-banner::after{content:'卐';position:absolute;right:-80px;top:50%;transform:translateY(-50%);font-size:350px;color:rgba(255,255,255,.03);font-weight:bold;line-height:1}
+.swastik-display{font-size:5rem;color:var(--gold-light);animation:float 5s ease-in-out infinite;display:inline-block;text-shadow:0 0 30px rgba(200,150,12,.4);margin-bottom:.5rem}
+.swastik-tagline{font-family:var(--font-devanagari);font-size:1.2rem;color:rgba(255,255,255,.7);margin:.5rem 0;letter-spacing:.1em}
+.swastik-meaning{font-family:var(--font-serif);font-style:italic;font-size:1.1rem;color:var(--gold-pale);max-width:600px;margin:0 auto}
+
+/* ── OWNER SECTION ── */
+#owner{background:var(--ivory);padding:70px 0}
+.owner-card{background:white;border:var(--border-gold);border-radius:4px;padding:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.owner-left{}
+.owner-avatar{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,var(--saffron),var(--gold));display:flex;align-items:center;justify-content:center;font-size:3.5rem;margin-bottom:1.5rem;box-shadow:0 4px 20px rgba(232,137,26,.3)}
+.owner-name{font-family:var(--font-serif);font-size:1.8rem;font-weight:600;color:var(--sandalwood-dark);margin-bottom:.3rem}
+.owner-title{font-family:var(--font-display);font-size:.65rem;letter-spacing:.2em;color:var(--saffron);text-transform:uppercase;margin-bottom:1.2rem}
+.owner-contacts{display:flex;flex-direction:column;gap:.75rem}
+.contact-row{display:flex;align-items:center;gap:12px;font-size:.95rem;color:var(--warm-gray)}
+.contact-icon{width:36px;height:36px;background:rgba(232,137,26,.1);border:1px solid rgba(232,137,26,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.contact-val{color:var(--sandalwood-dark);font-weight:500}
+.owner-right{}
+.map-container{border-radius:4px;overflow:hidden;border:var(--border-gold);height:280px;background:linear-gradient(135deg,var(--cream-dark),var(--gold-pale));display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative}
+.map-embed{width:100%;height:100%;border:0}
+.map-placeholder{text-align:center}
+.map-placeholder p{font-family:var(--font-display);font-size:.65rem;letter-spacing:.15em;color:var(--warm-gray);margin-top:.5rem}
+
+/* ── COW BREEDS ── */
+#cow-breeds{background:linear-gradient(135deg,#0D0600,#2A1000,#5C2800,#8B3A00);padding:80px 0;overflow:hidden}
+#cow-breeds .section-label{color:var(--gold-light)}
+#cow-breeds .section-title{color:white}
+.breeds-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem}
+.breed-card{background:rgba(255,255,255,.05);border:1px solid rgba(200,150,12,.25);border-radius:4px;overflow:hidden;transition:var(--tr)}
+.breed-card:hover{transform:translateY(-5px);border-color:var(--saffron);box-shadow:0 12px 40px rgba(0,0,0,.3)}
+.breed-img{height:240px;width:100%;object-fit:cover;display:block}
+.breed-img-placeholder{height:240px;background:linear-gradient(135deg,rgba(232,137,26,.15),rgba(200,150,12,.1));display:flex;align-items:center;justify-content:center;font-size:5rem}
+.breed-info{padding:1.5rem}
+.breed-name{font-family:var(--font-serif);font-size:1.4rem;font-weight:600;color:white;margin-bottom:.25rem}
+.breed-name-san{font-family:var(--font-devanagari);font-size:.85rem;color:var(--saffron-light);display:block;margin-bottom:.75rem}
+.breed-desc{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.7}
+.breed-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.breed-tag{background:rgba(200,150,12,.15);border:1px solid rgba(200,150,12,.25);color:var(--gold-pale);padding:3px 10px;border-radius:100px;font-size:.62rem;letter-spacing:.08em;font-family:var(--font-display)}
+
+/* ── PRODUCTS ── */
+#products{background:var(--cream);padding:80px 0}
+.cat-tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:3rem;padding-bottom:1.5rem;border-bottom:var(--border-gold)}
+.cat-tab{padding:8px 18px;border:1px solid rgba(200,150,12,.25);background:transparent;border-radius:2px;font-family:var(--font-display);font-size:.62rem;letter-spacing:.14em;cursor:pointer;color:var(--warm-gray);transition:var(--tr);text-transform:uppercase}
+.cat-tab.active,.cat-tab:hover{background:var(--saffron);border-color:var(--saffron);color:white}
+.cat-section{display:none}
+.cat-section.active{display:block}
+.cat-header{display:flex;align-items:center;gap:14px;margin-bottom:2rem}
+.cat-icon{font-size:2rem}
+.cat-title{font-family:var(--font-serif);font-size:1.8rem;font-weight:600;color:var(--sandalwood-dark)}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem}
+.pcard{background:white;border:var(--border-gold);border-radius:4px;overflow:hidden;transition:var(--tr);position:relative}
+.pcard:hover{transform:translateY(-5px);box-shadow:var(--shadow-deep)}
+.pcard-img{height:200px;background:linear-gradient(135deg,var(--cream-dark),var(--gold-pale));display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative}
+.pcard-badge{position:absolute;top:.8rem;left:.8rem;padding:3px 10px;border-radius:100px;font-family:var(--font-display);font-size:.58rem;letter-spacing:.12em;font-weight:700}
+.badge-best{background:linear-gradient(135deg,var(--saffron),var(--gold));color:white}
+.badge-new{background:var(--forest);color:white}
+.badge-oos{background:#888;color:white}
+.pcard-body{padding:1.25rem}
+.pcard-name{font-family:var(--font-serif);font-size:1.15rem;font-weight:600;color:var(--sandalwood-dark);margin-bottom:.15rem}
+.pcard-san{font-family:var(--font-devanagari);font-size:.75rem;color:var(--saffron);margin-bottom:.6rem}
+.pcard-desc{font-size:.85rem;color:var(--warm-gray);line-height:1.6;margin-bottom:.9rem}
+.pcard-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.9rem}
+.ptag{background:rgba(232,137,26,.07);color:var(--saffron-deep);border:1px solid rgba(232,137,26,.18);padding:2px 8px;border-radius:100px;font-size:.6rem;font-family:var(--font-display);letter-spacing:.08em}
+/* Variant price selector */
+.price-variants{display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem;margin-bottom:.9rem}
+.pv-btn{padding:6px 4px;border:1px solid rgba(200,150,12,.25);background:transparent;border-radius:2px;cursor:pointer;text-align:center;transition:var(--tr);position:relative}
+.pv-btn.active,.pv-btn:hover:not(.oos){border-color:var(--saffron);background:rgba(232,137,26,.06)}
+.pv-btn.oos{opacity:.45;cursor:not-allowed;background:#f5f5f0}
+.pv-size{font-family:var(--font-display);font-size:.6rem;letter-spacing:.1em;color:var(--warm-gray);display:block;margin-bottom:2px}
+.pv-price{font-family:var(--font-serif);font-size:.95rem;font-weight:600;color:var(--sandalwood-dark)}
+.pv-stock{font-size:.55rem;color:var(--warm-gray)}
+.pv-oos-label{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(240,240,235,.75);font-family:var(--font-display);font-size:.55rem;letter-spacing:.08em;color:#888;border-radius:2px}
+.pcard-footer{display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
+.pcard-price{font-family:var(--font-serif);font-size:1.5rem;font-weight:700;color:var(--sandalwood-dark)}
+.pcard-price span{font-size:.8rem;color:var(--warm-gray);font-weight:400}
+.btn-add{background:linear-gradient(135deg,var(--saffron),var(--gold));color:white;padding:9px 18px;border:none;border-radius:2px;font-family:var(--font-display);font-size:.62rem;letter-spacing:.14em;font-weight:700;cursor:pointer;transition:var(--tr);white-space:nowrap}
+.btn-add:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(232,137,26,.4)}
+.btn-add:disabled{background:#ccc;cursor:not-allowed;transform:none;box-shadow:none}
+.pcard-reviews{font-size:.78rem;color:var(--warm-gray);margin-bottom:.5rem}
+.stars{color:var(--gold)}
+
+/* ── PURITY REPORTS ── */
+#purity{background:linear-gradient(135deg,var(--sandalwood-dark) 0%,#3D2010 100%);padding:70px 0}
+#purity .section-label{color:var(--gold-light)}
+#purity .section-title{color:white}
+.purity-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.2rem;margin-top:2.5rem}
+.purity-num-card{background:rgba(255,255,255,.05);border:1px solid rgba(200,150,12,.25);border-radius:4px;padding:1.5rem;text-align:center;transition:var(--tr)}
+.purity-num-card:hover{background:rgba(200,150,12,.1);transform:translateY(-3px)}
+.pn{font-family:var(--font-display);font-size:2.2rem;font-weight:900;color:var(--gold-light);display:block}
+.pl{font-size:.8rem;color:rgba(255,255,255,.65);margin-top:.4rem;font-family:var(--font-display);letter-spacing:.08em}
+.batch-box{margin-top:2.5rem;background:rgba(255,255,255,.04);border:1px solid rgba(200,150,12,.18);border-radius:4px;padding:1.75rem}
+.batch-row{display:flex;justify-content:space-between;align-items:center;padding:.6rem 0;border-bottom:1px solid rgba(200,150,12,.08);font-size:.88rem}
+.batch-row:last-child{border:none}
+.bk{color:rgba(255,255,255,.55)}
+.bv{color:var(--gold-pale);font-family:var(--font-display);font-size:.75rem;letter-spacing:.08em}
+.ok-badge{background:rgba(45,150,45,.25);color:#90EE90;padding:2px 10px;border-radius:100px;font-size:.65rem;border:1px solid rgba(90,200,90,.28)}
+
+/* ── TESTIMONIALS ── */
+#testimonials{background:linear-gradient(135deg,#1A0A00,#3D1C00);padding:80px 0}
+#testimonials .section-label{color:var(--gold-light)}
+#testimonials .section-title{color:white}
+.tcarousel{overflow:hidden;margin-top:3rem}
+.ttrack{display:flex;gap:1.5rem;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+.tcard{min-width:360px;background:rgba(255,255,255,.05);border:1px solid rgba(200,150,12,.18);border-radius:4px;padding:2rem;flex-shrink:0}
+.tstars{color:var(--gold-light);font-size:1rem;letter-spacing:2px;margin-bottom:1rem}
+.ttext{font-family:var(--font-serif);font-style:italic;font-size:1.1rem;color:rgba(255,255,255,.88);line-height:1.7;margin-bottom:1.2rem}
+.tauthor{display:flex;align-items:center;gap:10px}
+.tav{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--saffron),var(--gold));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.tan{font-family:var(--font-display);font-size:.75rem;letter-spacing:.08em;color:white}
+.tac{font-size:.78rem;color:rgba(255,255,255,.45)}
+.tcontrols{display:flex;justify-content:center;gap:.8rem;margin-top:2rem;align-items:center}
+.tbtn{width:44px;height:44px;border-radius:50%;border:1px solid rgba(200,150,12,.28);background:transparent;color:var(--gold-light);font-size:1.1rem;cursor:pointer;transition:var(--tr);display:flex;align-items:center;justify-content:center}
+.tbtn:hover{background:rgba(200,150,12,.14)}
+.tdots{display:flex;gap:7px}
+.tdot{width:7px;height:7px;border-radius:50%;background:rgba(200,150,12,.28);cursor:pointer;transition:var(--tr)}
+.tdot.active{background:var(--gold-light);width:22px;border-radius:4px}
+
+/* ── CHECKOUT ── */
+#checkout{background:var(--ivory);padding:80px 0}
+.checkout-grid{display:grid;grid-template-columns:1fr 360px;gap:3rem}
+.form-sec-title{font-family:var(--font-serif);font-size:1.35rem;font-weight:600;color:var(--sandalwood-dark);display:flex;align-items:center;gap:10px;margin-bottom:1.2rem;padding-bottom:.75rem;border-bottom:var(--border-gold)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.fg{margin-bottom:1.1rem}
+.fg.full{grid-column:1/-1}
+.flabel{display:block;font-family:var(--font-display);font-size:.6rem;letter-spacing:.18em;color:var(--saffron-deep);text-transform:uppercase;margin-bottom:5px;font-weight:600}
+.finput,.fselect,.ftextarea{width:100%;padding:11px 14px;background:white;border:1px solid rgba(200,150,12,.28);border-radius:2px;font-size:.92rem;font-family:var(--font-body);color:var(--charcoal);outline:none;transition:var(--tr)}
+.finput:focus,.fselect:focus,.ftextarea:focus{border-color:var(--saffron);box-shadow:0 0 0 3px rgba(232,137,26,.1)}
+.ftextarea{height:90px;resize:vertical}
+.fdiv{display:flex;align-items:center;gap:1rem;margin:1.5rem 0}
+.fdiv::before,.fdiv::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(200,150,12,.28),transparent)}
+.fdiv-text{font-family:var(--font-devanagari);font-size:.8rem;color:var(--saffron);white-space:nowrap}
+.summary-card{background:white;border:var(--border-gold);border-radius:4px;padding:1.75rem;position:sticky;top:82px}
+.summary-title{font-family:var(--font-serif);font-size:1.2rem;font-weight:600;color:var(--sandalwood-dark);margin-bottom:1.2rem;padding-bottom:.75rem;border-bottom:var(--border-gold)}
+.sum-item{display:flex;justify-content:space-between;padding:.55rem 0;border-bottom:1px solid rgba(200,150,12,.08);font-size:.9rem}
+.sum-total{display:flex;justify-content:space-between;padding:.9rem 0 0;border-top:2px solid var(--gold);margin-top:.4rem}
+.sum-total-label{font-family:var(--font-display);font-size:.75rem;letter-spacing:.14em;color:var(--charcoal);text-transform:uppercase}
+.sum-total-price{font-family:var(--font-serif);font-size:1.65rem;font-weight:700;color:var(--saffron-deep)}
+.pm-list{margin-top:1.25rem;display:flex;flex-direction:column;gap:.6rem}
+.pm-opt{display:flex;align-items:center;gap:10px;padding:10px;border:1px solid rgba(200,150,12,.2);border-radius:2px;cursor:pointer;transition:var(--tr)}
+.pm-opt:hover,.pm-opt.sel{border-color:var(--saffron);background:rgba(232,137,26,.04)}
+.pm-opt input{accent-color:var(--saffron)}
+.pm-icon{font-size:1.1rem}
+.pm-label{font-family:var(--font-display);font-size:.7rem;letter-spacing:.08em;color:var(--sandalwood-dark)}
+.btn-order{width:100%;background:linear-gradient(135deg,var(--saffron),var(--gold));color:white;padding:16px;border:none;border-radius:2px;font-family:var(--font-display);font-size:.75rem;letter-spacing:.18em;font-weight:700;cursor:pointer;margin-top:1.2rem;transition:var(--tr);box-shadow:0 4px 18px rgba(232,137,26,.28)}
+.btn-order:hover{opacity:.9;transform:translateY(-1px)}
+.sec-note{text-align:center;margin-top:.75rem;font-size:.75rem;color:var(--warm-gray);display:flex;align-items:center;justify-content:center;gap:5px}
+.trust-row{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem;padding:1rem;background:var(--cream);border-radius:4px;border:var(--border-gold)}
+.tbadge{font-size:.72rem;color:var(--warm-gray);font-family:var(--font-display);letter-spacing:.04em}
+
+/* ── TRACKING ── */
+#tracking{background:var(--cream);padding:80px 0}
+.track-search{max-width:480px;margin:0 auto 3.5rem;display:flex}
+.track-search input{flex:1;padding:14px 18px;border:2px solid rgba(200,150,12,.28);border-right:none;border-radius:2px 0 0 2px;font-family:var(--font-body);font-size:.95rem;background:white;outline:none;color:var(--charcoal);transition:var(--tr)}
+.track-search input:focus{border-color:var(--saffron)}
+.track-search button{background:linear-gradient(135deg,var(--saffron),var(--gold));color:white;padding:14px 24px;border:none;border-radius:0 2px 2px 0;cursor:pointer;font-family:var(--font-display);font-size:.65rem;letter-spacing:.14em;font-weight:700}
+.track-result{max-width:640px;margin:0 auto;display:none}
+.track-result.vis{display:block}
+.track-head{background:white;border:var(--border-gold);border-radius:4px 4px 0 0;padding:1.75rem;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.75rem}
+.track-id-lbl{font-family:var(--font-display);font-size:.62rem;letter-spacing:.2em;color:var(--saffron);margin-bottom:.4rem}
+.track-order-name{font-family:var(--font-serif);font-size:1.3rem;font-weight:600;color:var(--sandalwood-dark)}
+.track-eta{text-align:right;font-size:.82rem;color:var(--warm-gray)}
+.track-eta strong{color:var(--forest);font-size:.95rem}
+.timeline{background:white;border:var(--border-gold);border-top:none;border-radius:0 0 4px 4px;padding:1.75rem}
+.ts{display:flex;gap:1.25rem;padding-bottom:1.75rem;position:relative}
+.ts:last-child{padding-bottom:0}
+.ts::before{content:'';position:absolute;left:17px;top:38px;width:2px;height:calc(100% - 18px);background:linear-gradient(180deg,var(--gold),rgba(200,150,12,.15))}
+.ts:last-child::before{display:none}
+.ts-dot{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;position:relative;z-index:1}
+.ts-dot.done{background:linear-gradient(135deg,var(--saffron),var(--gold));box-shadow:0 2px 10px rgba(232,137,26,.3)}
+.ts-dot.cur{background:white;border:2px solid var(--saffron);animation:pulse 2s ease infinite}
+.ts-dot.pend{background:var(--cream);border:2px solid rgba(200,150,12,.2);opacity:.55}
+.ts-content{flex:1;padding-top:4px}
+.ts-title{font-family:var(--font-serif);font-size:1.05rem;font-weight:600;color:var(--sandalwood-dark);margin-bottom:.2rem}
+.ts-sub{font-size:.82rem;color:var(--warm-gray)}
+.ts-time{font-family:var(--font-display);font-size:.6rem;letter-spacing:.14em;color:var(--saffron);margin-top:.2rem}
+.track-addrs{background:white;border:var(--border-gold);border-radius:4px;padding:1.5rem;margin-top:1.2rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.addr-block h4{font-family:var(--font-display);font-size:.6rem;letter-spacing:.22em;color:var(--saffron);text-transform:uppercase;margin-bottom:.6rem;padding-bottom:.4rem;border-bottom:var(--border-gold)}
+.addr-block p{font-size:.9rem;color:var(--warm-gray);line-height:1.7}
+
+/* ── BLOG ── */
+#blog{background:var(--ivory);padding:80px 0}
+.blog-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3rem;gap:1.5rem;flex-wrap:wrap}
+.cat-filter{display:flex;gap:.4rem;flex-wrap:wrap}
+.cf-btn{padding:5px 14px;border:1px solid rgba(200,150,12,.28);background:transparent;border-radius:100px;font-family:var(--font-display);font-size:.6rem;letter-spacing:.14em;cursor:pointer;color:var(--warm-gray);transition:var(--tr);text-transform:uppercase}
+.cf-btn.active,.cf-btn:hover{background:var(--saffron);border-color:var(--saffron);color:white}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem}
+.bcard{background:white;border:var(--border-gold);border-radius:4px;overflow:hidden;transition:var(--tr);cursor:pointer}
+.bcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-warm)}
+.bimg{height:190px;background:linear-gradient(135deg,var(--cream-dark),var(--gold-pale));display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative}
+.brt{position:absolute;bottom:.75rem;right:.75rem;background:rgba(26,18,8,.8);color:var(--gold-pale);padding:3px 9px;border-radius:100px;font-size:.6rem;font-family:var(--font-display);letter-spacing:.08em}
+.bcontent{padding:1.25rem}
+.bcat{font-family:var(--font-display);font-size:.58rem;letter-spacing:.18em;color:var(--saffron);text-transform:uppercase;margin-bottom:.6rem}
+.btitle{font-family:var(--font-serif);font-size:1.1rem;font-weight:600;color:var(--sandalwood-dark);line-height:1.4;margin-bottom:.6rem}
+.bexcerpt{font-size:.88rem;color:var(--warm-gray);line-height:1.65;margin-bottom:.75rem}
+.bmeta{font-size:.75rem;color:var(--warm-gray);opacity:.65}
+.subscribe-bar{position:sticky;bottom:0;background:linear-gradient(135deg,var(--sandalwood-dark),#3D2010);padding:1.1rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;border-top:2px solid var(--saffron);flex-wrap:wrap}
+.sub-text{color:white;font-family:var(--font-serif);font-size:.95rem;font-style:italic}
+.sub-text strong{color:var(--gold-pale)}
+.sub-form{display:flex}
+.sub-form input{padding:9px 14px;background:rgba(255,255,255,.1);border:1px solid rgba(200,150,12,.28);border-right:none;border-radius:2px 0 0 2px;color:white;font-family:var(--font-body);font-size:.88rem;outline:none;min-width:220px}
+.sub-form input::placeholder{color:rgba(255,255,255,.4)}
+.sub-form button{background:var(--saffron);color:white;padding:9px 18px;border:none;border-radius:0 2px 2px 0;cursor:pointer;font-family:var(--font-display);font-size:.62rem;letter-spacing:.14em;font-weight:700;transition:var(--tr)}
+.sub-form button:hover{background:var(--gold)}
+
+/* ── FOOTER ── */
+footer{background:var(--charcoal);color:rgba(255,255,255,.65);padding:5rem 0 2rem}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(200,150,12,.12)}
+.footer-brand p{font-size:.88rem;color:rgba(255,255,255,.45);line-height:1.7;margin:1rem 0 1.25rem;max-width:270px}
+.footer-col h4{font-family:var(--font-display);font-size:.65rem;letter-spacing:.22em;color:var(--gold-light);text-transform:uppercase;margin-bottom:1.1rem}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:.65rem}
+.footer-col ul li a{color:rgba(255,255,255,.45);text-decoration:none;font-size:.88rem;transition:var(--tr)}
+.footer-col ul li a:hover{color:var(--gold-light)}
+.fsocial{display:flex;gap:.8rem;margin-top:.9rem}
+.fsoc-btn{width:38px;height:38px;border:1px solid rgba(200,150,12,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.45);text-decoration:none;font-size:.95rem;transition:var(--tr)}
+.fsoc-btn:hover{border-color:var(--saffron);color:var(--saffron)}
+.footer-bottom{padding-top:1.75rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:.75rem;color:rgba(255,255,255,.28)}
+.footer-sym{font-family:var(--font-devanagari);font-size:1.1rem;color:var(--saffron);opacity:.45;letter-spacing:.5rem}
+.fcerts{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.2rem}
+.fcert{background:rgba(200,150,12,.1);border:1px solid rgba(200,150,12,.18);color:var(--gold-pale);padding:3px 10px;border-radius:100px;font-size:.6rem;font-family:var(--font-display);letter-spacing:.08em}
+
+/* ── STICKY CTA ── */
+#sticky-cta{position:fixed;bottom:5rem;right:1.5rem;background:linear-gradient(135deg,var(--saffron),var(--gold));color:white;padding:12px 20px;border-radius:2px;font-family:var(--font-display);font-size:.65rem;letter-spacing:.14em;font-weight:700;cursor:pointer;text-decoration:none;box-shadow:0 4px 20px rgba(232,137,26,.4);z-index:500;transform:translateY(80px);opacity:0;transition:var(--tr)}
+#sticky-cta.vis{transform:translateY(0);opacity:1}
+
+/* ── TOAST ── */
+.toast{position:fixed;bottom:2rem;right:2rem;background:linear-gradient(135deg,var(--sandalwood-dark),#3D2010);border:1px solid rgba(200,150,12,.28);color:white;padding:.9rem 1.25rem;border-radius:4px;box-shadow:var(--shadow-deep);z-index:3000;transform:translateX(120%);transition:transform .4s cubic-bezier(.4,0,.2,1);max-width:300px;display:flex;align-items:center;gap:10px}
+.toast.show{transform:translateX(0)}
+.t-icon{font-size:1.4rem;flex-shrink:0}
+.t-title{font-family:var(--font-display);font-size:.7rem;letter-spacing:.08em;color:var(--gold-pale);margin-bottom:2px}
+.t-msg{font-size:.85rem;line-height:1.45}
+
+/* ── ADMIN DASHBOARD ── */
+#admin-overlay{position:fixed;inset:0;background:rgba(26,18,8,.92);backdrop-filter:blur(8px);z-index:2000;display:none;align-items:center;justify-content:center;padding:1.5rem}
+#admin-overlay.open{display:flex}
+.admin-panel{background:#1A120A;border:1px solid rgba(200,150,12,.18);border-radius:8px;width:100%;max-width:1100px;max-height:92vh;overflow-y:auto;display:flex;flex-direction:column}
+.admin-hdr{padding:1.25rem 1.75rem;border-bottom:1px solid rgba(200,150,12,.12);display:flex;justify-content:space-between;align-items:center;background:rgba(200,150,12,.05);flex-shrink:0}
+.admin-hdr-title{font-family:var(--font-display);font-size:.75rem;letter-spacing:.22em;color:var(--gold-light);text-transform:uppercase}
+.admin-close{background:transparent;border:1px solid rgba(200,150,12,.18);color:rgba(255,255,255,.45);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;transition:var(--tr)}
+.admin-close:hover{color:white;border-color:var(--saffron)}
+.admin-login-form{padding:3rem;max-width:380px;margin:0 auto;width:100%}
+.admin-login-form h2{font-family:var(--font-serif);font-size:1.7rem;color:white;margin-bottom:.4rem}
+.admin-login-form p{color:rgba(255,255,255,.45);font-size:.88rem;margin-bottom:1.75rem}
+.admin-input{width:100%;padding:11px 14px;background:rgba(255,255,255,.05);border:1px solid rgba(200,150,12,.18);border-radius:2px;color:white;font-family:var(--font-body);font-size:.92rem;margin-bottom:.9rem;outline:none;transition:var(--tr)}
+.admin-input:focus{border-color:var(--saffron)}
+.admin-btn{width:100%;background:linear-gradient(135deg,var(--saffron),var(--gold));color:white;padding:13px;border:none;border-radius:2px;font-family:var(--font-display);font-size:.72rem;letter-spacing:.18em;font-weight:700;cursor:pointer;transition:var(--tr)}
+.admin-body{padding:1.75rem;display:none}
+.admin-body.vis{display:block}
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:1.75rem}
+.kpi{background:rgba(255,255,255,.04);border:1px solid rgba(200,150,12,.12);border-radius:4px;padding:1.1rem}
+.kpi-lbl{font-family:var(--font-display);font-size:.58rem;letter-spacing:.18em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.4rem}
+.kpi-val{font-family:var(--font-display);font-size:1.7rem;font-weight:900;color:var(--gold-light)}
+.kpi-change{font-size:.72rem;color:#90EE90;margin-top:.2rem}
+.sparkline{height:36px;display:flex;align-items:flex-end;gap:2px;margin-top:.6rem}
+.sb{flex:1;background:rgba(200,150,12,.28);border-radius:1px;min-height:3px;transition:var(--tr)}
+.sb:hover{background:var(--gold-light)}
+/* Product Manager */
+.admin-prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin-top:1.25rem}
+.admin-prod-card{background:rgba(255,255,255,.04);border:1px solid rgba(200,150,12,.12);border-radius:4px;padding:1.1rem}
+.ap-name{font-family:var(--font-display);font-size:.75rem;letter-spacing:.1em;color:var(--gold-light);margin-bottom:.8rem}
+.ap-variants{display:flex;flex-direction:column;gap:.4rem;margin-bottom:.8rem}
+.ap-var{display:grid;grid-template-columns:auto 1fr 80px 60px;gap:.4rem;align-items:center;font-size:.78rem}
+.ap-var-lbl{color:rgba(255,255,255,.55)}
+.ap-price-inp{background:rgba(255,255,255,.06);border:1px solid rgba(200,150,12,.18);color:white;padding:4px 8px;border-radius:2px;font-size:.78rem;width:100%;outline:none}
+.ap-stock-inp{background:rgba(255,255,255,.06);border:1px solid rgba(200,150,12,.18);color:white;padding:4px 6px;border-radius:2px;font-size:.78rem;width:100%;outline:none;text-align:center}
+.ap-oos{font-size:.6rem;color:#ff8080;font-family:var(--font-display);letter-spacing:.08em}
+.ap-save{background:linear-gradient(135deg,var(--saffron),var(--gold));color:white;padding:5px 14px;border:none;border-radius:2px;font-family:var(--font-display);font-size:.6rem;letter-spacing:.12em;font-weight:700;cursor:pointer;transition:var(--tr)}
+.ap-save:hover{opacity:.9}
+/* Orders table */
+.orders-tbl{width:100%;border-collapse:collapse;margin-top:1.25rem}
+.orders-tbl th{padding:9px 11px;text-align:left;font-family:var(--font-display);font-size:.58rem;letter-spacing:.18em;color:rgba(255,255,255,.38);text-transform:uppercase;border-bottom:1px solid rgba(200,150,12,.12)}
+.orders-tbl td{padding:11px;font-size:.82rem;color:rgba(255,255,255,.75);border-bottom:1px solid rgba(255,255,255,.04)}
+.orders-tbl tr:hover td{background:rgba(200,150,12,.04)}
+.sbadge{padding:3px 9px;border-radius:100px;font-family:var(--font-display);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase}
+.sbadge.del{background:rgba(45,150,45,.2);color:#90EE90;border:1px solid rgba(90,200,90,.28)}
+.sbadge.proc{background:rgba(232,137,26,.2);color:var(--saffron-light);border:1px solid rgba(232,137,26,.28)}
+.sbadge.ship{background:rgba(50,100,200,.2);color:#87CEEB;border:1px solid rgba(87,206,235,.28)}
+.status-sel{background:rgba(255,255,255,.05);border:1px solid rgba(200,150,12,.18);color:white;padding:4px 7px;border-radius:2px;font-size:.72rem;cursor:pointer}
+.admin-tabs{display:flex;gap:.5rem;margin-bottom:1.25rem}
+.atab{padding:6px 16px;border:1px solid rgba(200,150,12,.18);background:transparent;color:rgba(255,255,255,.5);border-radius:2px;font-family:var(--font-display);font-size:.62rem;letter-spacing:.12em;cursor:pointer;transition:var(--tr)}
+.atab.active,.atab:hover{background:rgba(200,150,12,.12);color:var(--gold-light);border-color:rgba(200,150,12,.4)}
+.admin-tab-pane{display:none}
+.admin-tab-pane.active{display:block}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .checkout-grid{grid-template-columns:1fr}
+  .summary-card{position:static}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .kpi-row{grid-template-columns:1fr 1fr}
+  .breeds-grid{grid-template-columns:1fr 1fr}
+  .owner-card{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .nav-links.open{display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:var(--ivory);padding:1rem 1.5rem;border-bottom:var(--border-gold);gap:.9rem}
+  .frow{grid-template-columns:1fr}
+  .track-addrs{grid-template-columns:1fr}
+  .blog-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .breeds-grid{grid-template-columns:1fr}
+  .kpi-row{grid-template-columns:1fr 1fr}
+  .tcard{min-width:82vw}
+  .waitlist-row{flex-direction:column;max-width:100%}
+  .waitlist-row input{border-right:1px solid rgba(245,223,160,.28);border-radius:2px;border-bottom:none}
+  .waitlist-row button{border-radius:2px}
+  .subscribe-bar{flex-direction:column}
+  .sub-form{flex-direction:column}
+  .sub-form input{min-width:unset;border-right:1px solid rgba(200,150,12,.28);border-radius:2px;border-bottom:none}
+  .sub-form button{border-radius:2px}
+}
+@media(max-width:480px){
+  .kpi-row{grid-template-columns:1fr}
+  .products-grid{grid-template-columns:1fr}
+  .admin-prod-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- TOAST -->
+<div class="toast" id="toast"><div class="t-icon" id="t-icon">🙏</div><div><div class="t-title" id="t-title">SWASTIK GOPADMA</div><div class="t-msg" id="t-msg">Welcome!</div></div></div>
+
+<!-- STICKY CTA -->
+<a href="#checkout" id="sticky-cta">🛒 ORDER NOW ✦</a>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-brand">
+    <div class="swastik-logo">卐</div>
+    <div>
+      <div class="nav-wordmark">SWASTIK</div>
+      <span class="nav-sub">गोपद्म — शुद्धं पवित्रम्</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#why">Our Story</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#cow-breeds">Sacred Cows</a></li>
+    <li><a href="#tracking">Track</a></li>
+    <li><a href="#owner">Contact</a></li>
+    <li><a href="#" onclick="openAdmin();return false">Admin</a></li>
+    <li><a href="#checkout" class="nav-cta">Buy Now ✦</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<div id="main">
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="floating">
+    <div class="fl">ॐ</div><div class="fl">卐</div><div class="fl">🌸</div><div class="fl">ॐ</div><div class="fl">✦</div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">✦ Batch #001 — Now Accepting Orders</div>
+      <span class="hero-om">ॐ</span>
+      <h1 class="hero-title"><em>Gopadma Ghee</em>SWASTIK</h1>
+      <p class="hero-sub">गोपद्म — गौ माता का पवित्र अमृत</p>
+      <p class="hero-desc">A2 Bilona Ghee · Cold Pressed Oils · Organic Millets · Panchgavya Products. Crafted with 5,000 years of Vedic wisdom, from Gir, Punganoor & Desi cows.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn-p">✦ Shop All Products</a>
+        <a href="#cow-breeds" class="btn-s">Meet Our Cows →</a>
+      </div>
+      <div class="social-proof">
+        <div class="avatars"><span>🧘</span><span>👨‍🌾</span><span>🙏</span><span>👩</span></div>
+        <div class="sp-text"><strong>2,847 families</strong> trust Swastik.<br>Join the Vedic wellness movement.</div>
+      </div>
+      <div class="countdown-box">
+        <span class="cd-label">✦ Batch #001 Ships In ✦</span>
+        <div class="cd-timer">
+          <div class="cd-unit"><span class="cd-num" id="cd-d">07</span><span class="cd-lbl">Days</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-num" id="cd-h">14</span><span class="cd-lbl">Hours</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-num" id="cd-m">33</span><span class="cd-lbl">Mins</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-num" id="cd-s">00</span><span class="cd-lbl">Secs</span></div>
+        </div>
+        <div class="waitlist-row">
+          <input type="email" id="wl-email" placeholder="Your sacred email address...">
+          <button onclick="joinWaitlist()">JOIN ✦</button>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="jar-wrap">
+        <div class="jar-glow"></div>
+        <div class="jar">
+          <div class="jar-lid"></div>
+          <div class="jar-label">
+            <span class="jar-label-om">ॐ</span>
+            <span class="jar-label-name">GOPADMA</span>
+            <span class="jar-label-sub">A2 बिलोना घृत</span>
+          </div>
+          <div class="jar-shine"></div>
+        </div>
+      </div>
+      <div class="hero-pills">
+        <div class="hero-pill">🐄 A2 Gir Cow</div>
+        <div class="hero-pill">🌿 Organic</div>
+        <div class="hero-pill">⚗️ Lab Tested</div>
+        <div class="hero-pill">📿 Vedic Bilona</div>
+        <div class="hero-pill">🏡 Farm Direct</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SWASTIK BANNER ══════════ -->
+<section id="swastik-banner">
+  <div class="swastik-display">卐</div>
+  <p class="swastik-tagline">स्वस्तिक — शुभ, मंगल और समृद्धि का प्रतीक</p>
+  <p class="swastik-meaning">"Swastik" — the ancient Vedic symbol of auspiciousness, well-being and cosmic prosperity. Every product we make carries this sacred blessing.</p>
+</section>
+
+<!-- ══════════ WHY IT MATTERS ══════════ -->
+<section id="why" class="section" style="background:var(--ivory);position:relative;overflow:hidden">
+  <div style="position:absolute;right:-80px;top:50%;transform:translateY(-50%);font-family:var(--font-devanagari);font-size:380px;color:rgba(232,137,26,.03);pointer-events:none;line-height:1">ॐ</div>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center">
+      <div class="reveal">
+        <span class="section-label">✦ The Sacred Origin</span>
+        <h2 class="section-title">Why Gopadma<br>Ghee is Different</h2>
+        <div class="gold-div"></div>
+        <p style="color:var(--warm-gray);margin-bottom:1rem;line-height:1.9">In an age of adulteration and shortcuts, <strong style="color:var(--sandalwood-dark)">Gopadma Ghee</strong> returns to the source — to the sacred wisdom encoded in our Vedas for over 5,000 years.</p>
+        <blockquote style="border-left:3px solid var(--saffron);padding:1.2rem 1.75rem;background:rgba(232,137,26,.05);border-radius:0 4px 4px 0;font-family:var(--font-serif);font-style:italic;font-size:1.2rem;color:var(--sandalwood-dark);line-height:1.6;margin:1.5rem 0">
+          "Ghritam papasya bheşajam" — Ghee is the medicine for all ailments.
+          <cite style="display:block;font-style:normal;font-size:.75rem;font-family:var(--font-display);letter-spacing:.14em;color:var(--saffron);margin-top:.6rem;font-weight:600">— Rigveda 8.43.11</cite>
+        </blockquote>
+        <p style="color:var(--warm-gray);line-height:1.9">Every jar begins with <strong style="color:var(--sandalwood-dark)">Gir, Punganoor & Desi cows</strong> grazing freely. Their milk is fermented into curd, hand-churned with <em>bilona</em> at dawn — following the exact method in the Charaka Samhita.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem">
+        <div class="why-card reveal d1" style="background:white;border:var(--border-gold);border-radius:4px;padding:1.5rem;transition:var(--tr)"><span style="font-size:1.75rem;display:block;margin-bottom:.75rem">🐄</span><h3 style="font-family:var(--font-serif);font-size:1.1rem;font-weight:600;color:var(--sandalwood-dark);margin-bottom:.4rem">A2 Gir Cows</h3><p style="font-size:.85rem;color:var(--warm-gray);line-height:1.65">Native Gir cows produce A2 β-casein milk — the original milk of Vedic civilization.</p></div>
+        <div class="why-card reveal d2" style="background:white;border:var(--border-gold);border-radius:4px;padding:1.5rem;transition:var(--tr)"><span style="font-size:1.75rem;display:block;margin-bottom:.75rem">🌅</span><h3 style="font-family:var(--font-serif);font-size:1.1rem;font-weight:600;color:var(--sandalwood-dark);margin-bottom:.4rem">Dawn Bilona</h3><p style="font-size:.85rem;color:var(--warm-gray);line-height:1.65">Churned at Brahmamuhurta (4–6 AM) when Vedic texts say cosmic energy peaks.</p></div>
+        <div class="why-card reveal d3" style="background:white;border:var(--border-gold);border-radius:4px;padding:1.5rem;transition:var(--tr)"><span style="font-size:1.75rem;display:block;margin-bottom:.75rem">🔥</span><h3 style="font-family:var(--font-serif);font-size:1.1rem;font-weight:600;color:var(--sandalwood-dark);margin-bottom:.4rem">Sacred Fire</h3><p style="font-size:.85rem;color:var(--warm-gray);line-height:1.65">Slow-cooked over cow-dung patties at precise temperatures, preserving all nutrients.</p></div>
+        <div class="why-card reveal d4" style="background:white;border:var(--border-gold);border-radius:4px;padding:1.5rem;transition:var(--tr)"><span style="font-size:1.75rem;display:block;margin-bottom:.75rem">⚗️</span><h3 style="font-family:var(--font-serif);font-size:1.1rem;font-weight:600;color:var(--sandalwood-dark);margin-bottom:.4rem">Lab Certified</h3><p style="font-size:.85rem;color:var(--warm-gray);line-height:1.65">Every batch tested by NABL-accredited Eurofins before it reaches you.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SACRED COW BREEDS ══════════ -->
+<section id="cow-breeds">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-label reveal">✦ Our Sacred Sources</span>
+      <h2 class="section-title reveal">The Three Divine Breeds</h2>
+      <div class="gold-div center reveal"></div>
+      <p class="reveal" style="color:rgba(255,255,255,.6);max-width:500px;margin:0 auto 1rem">Our ghee is sourced exclusively from these three revered indigenous Indian breeds, each with unique Ayurvedic properties.</p>
+    </div>
+    <div class="breeds-grid">
+      <!-- GIR COW -->
+      <div class="breed-card reveal">
+        <img class="breed-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Gyr_bull.jpg/640px-Gyr_bull.jpg" alt="Gir Cow — Sacred Indian Breed" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="breed-img-placeholder" style="display:none">🐄</div>
+        <div class="breed-info">
+          <div class="breed-name">Gir Cow <span style="font-size:.7rem;color:rgba(255,255,255,.4)">• Gujarat</span></div>
+          <span class="breed-name-san">गिर गौ — गुजरात की पवित्र गाय</span>
+          <p class="breed-desc">The most revered of all Indian breeds. Gir cows produce rich A2 milk with naturally high CLA, Omega-3, and fat-soluble vitamins. Their distinctive hump (Suryaketu nadi) is said to absorb solar energy, enriching the milk with prana.</p>
+          <div class="breed-tags">
+            <span class="breed-tag">A2 Certified</span>
+            <span class="breed-tag">High CLA</span>
+            <span class="breed-tag">Suryaketu Nadi</span>
+            <span class="breed-tag">Disease Resistant</span>
+            <span class="breed-tag">Sattvik Milk</span>
+          </div>
+        </div>
+      </div>
+      <!-- PUNGANOOR COW -->
+      <div class="breed-card reveal d2">
+        <img class="breed-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Punganur_Cattle.jpg/640px-Punganur_Cattle.jpg" alt="Punganoor Dwarf Cow — Sacred Breed" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="breed-img-placeholder" style="display:none">🐮</div>
+        <div class="breed-info">
+          <div class="breed-name">Punganoor Cow <span style="font-size:.7rem;color:rgba(255,255,255,.4)">• Andhra Pradesh</span></div>
+          <span class="breed-name-san">पुंगनूर गौ — आंध्र की लघु गाय</span>
+          <p class="breed-desc">India's smallest and rarest indigenous cow breed, from the Chittoor district of Andhra Pradesh. Despite tiny size, they produce milk with the highest fat content (8%) of any Indian breed — extraordinarily rich and medicated, perfect for traditional Ayurvedic ghee.</p>
+          <div class="breed-tags">
+            <span class="breed-tag">Rarest Breed</span>
+            <span class="breed-tag">8% Fat Milk</span>
+            <span class="breed-tag">Endangered</span>
+            <span class="breed-tag">Medicinal Milk</span>
+            <span class="breed-tag">Dwarf Breed</span>
+          </div>
+        </div>
+      </div>
+      <!-- DESI COW -->
+      <div class="breed-card reveal d3">
+        <img class="breed-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Indian_cow.jpg/640px-Indian_cow.jpg" alt="Desi Indigenous Cow" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="breed-img-placeholder" style="display:none">🐃</div>
+        <div class="breed-info">
+          <div class="breed-name">Desi (Indigenous) Cow <span style="font-size:.7rem;color:rgba(255,255,255,.4)">• Pan India</span></div>
+          <span class="breed-name-san">देसी गौ — भारत की माँ</span>
+          <p class="breed-desc">Native Indian breeds like Sahiwal, Ongole, and Hallikar — all carrying the pure A2 beta-casein gene. Their milk has been the foundation of Ayurvedic medicine, Panchagavya therapy, and Vedic fire rituals for millennia. Sacred. Pure. Irreplaceable.</p>
+          <div class="breed-tags">
+            <span class="breed-tag">A2 Milk</span>
+            <span class="breed-tag">Heat Tolerant</span>
+            <span class="breed-tag">Panchagavya</span>
+            <span class="breed-tag">Grass-fed</span>
+            <span class="breed-tag">Vedic Heritage</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PRODUCTS ══════════ -->
+<section id="products">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:2.5rem">
+      <span class="section-label reveal">✦ Our Sacred Range</span>
+      <h2 class="section-title reveal">Complete Vedic Collection</h2>
+      <div class="gold-div center reveal"></div>
+    </div>
+    <!-- Category Tabs -->
+    <div class="cat-tabs">
+      <button class="cat-tab active" onclick="showCat('ghee',this)">🧈 Ghee</button>
+      <button class="cat-tab" onclick="showCat('cold-oils',this)">🫙 Cold Pressed Oils</button>
+      <button class="cat-tab" onclick="showCat('bull-oils',this)">🐂 Bull Driven Oils</button>
+      <button class="cat-tab" onclick="showCat('millets',this)">🌾 Millets</button>
+      <button class="cat-tab" onclick="showCat('panchgavya',this)">🐄 Cow Products</button>
+      <button class="cat-tab" onclick="showCat('flours',this)">🌰 Flours & Cereals</button>
+    </div>
+
+    <!-- ── GHEE ── -->
+    <div class="cat-section active" id="cat-ghee">
+      <div class="cat-header"><span class="cat-icon">🧈</span><h3 class="cat-title">Sacred Ghee Collection</h3></div>
+      <div class="products-grid" id="grid-ghee"></div>
+    </div>
+
+    <!-- ── COLD PRESSED OILS ── -->
+    <div class="cat-section" id="cat-cold-oils">
+      <div class="cat-header"><span class="cat-icon">🫙</span><h3 class="cat-title">Cold Pressed Oils — चेक्कु / घानी</h3></div>
+      <div class="products-grid" id="grid-cold-oils"></div>
+    </div>
+
+    <!-- ── BULL DRIVEN OILS ── -->
+    <div class="cat-section" id="cat-bull-oils">
+      <div class="cat-header"><span class="cat-icon">🐂</span><h3 class="cat-title">Bull Driven Oils — ಎತ್ತಿನ ಘಾಣಿ / बैल चालित</h3></div>
+      <div class="products-grid" id="grid-bull-oils"></div>
+    </div>
+
+    <!-- ── MILLETS ── -->
+    <div class="cat-section" id="cat-millets">
+      <div class="cat-header"><span class="cat-icon">🌾</span><h3 class="cat-title">Organic Millets — Certified Unpolished</h3></div>
+      <div class="products-grid" id="grid-millets"></div>
+    </div>
+
+    <!-- ── PANCHGAVYA ── -->
+    <div class="cat-section" id="cat-panchgavya">
+      <div class="cat-header"><span class="cat-icon">🐄</span><h3 class="cat-title">Panchgavya & Cow By-Products</h3></div>
+      <div class="products-grid" id="grid-panchgavya"></div>
+    </div>
+
+    <!-- ── FLOURS ── -->
+    <div class="cat-section" id="cat-flours">
+      <div class="cat-header"><span class="cat-icon">🌰</span><h3 class="cat-title">Millet Flours & Traditional Cereals</h3></div>
+      <div class="products-grid" id="grid-flours"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PURITY REPORTS ══════════ -->
+<section id="purity">
+  <div class="container">
+    <span class="section-label">✦ Batch Purity Reports</span>
+    <h2 class="section-title" style="color:white">Transparency You Can Trust</h2>
+    <div class="gold-div"></div>
+    <div class="purity-grid">
+      <div class="purity-num-card"><span class="pn">99.8%</span><div class="pl">Purity Index</div></div>
+      <div class="purity-num-card"><span class="pn">0.2%</span><div class="pl">Moisture Level</div></div>
+      <div class="purity-num-card"><span class="pn">A2</span><div class="pl">Beta-Casein Type</div></div>
+      <div class="purity-num-card"><span class="pn">48h</span><div class="pl">Fermentation Time</div></div>
+      <div class="purity-num-card"><span class="pn">ND</span><div class="pl">Pesticide Residue</div></div>
+    </div>
+    <div class="batch-box">
+      <div style="font-family:var(--font-display);font-size:.65rem;letter-spacing:.22em;color:var(--gold-light);margin-bottom:1.2rem;text-transform:uppercase">✦ Current Batch: GG-2025-001 — Tested 12 March 2025</div>
+      <div class="batch-row"><span class="bk">Batch Number</span><span class="bv">GG-2025-001</span></div>
+      <div class="batch-row"><span class="bk">Source Farm</span><span class="bv">Somnath Gir Farm, Gujarat</span></div>
+      <div class="batch-row"><span class="bk">Cow Breed</span><span class="bv">Pure Gir A2 Certified</span></div>
+      <div class="batch-row"><span class="bk">Processing Date</span><span class="bv">March 8–10, 2025</span></div>
+      <div class="batch-row"><span class="bk">3rd Party Lab</span><span class="bv">NABL Accredited — Eurofins India</span></div>
+      <div class="batch-row"><span class="bk">FSSAI Status</span><span class="bv"><span class="ok-badge">PASSED</span></span></div>
+      <div class="batch-row"><span class="bk">Units Available</span><span class="bv">243 / 500 (Selling Fast)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ OWNER SECTION ══════════ -->
+<section id="owner">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:2.5rem">
+      <span class="section-label reveal">✦ Meet the Founder</span>
+      <h2 class="section-title reveal">Our Sacred Bond</h2>
+      <div class="gold-div center reveal"></div>
+    </div>
+    <div class="owner-card reveal">
+      <div class="owner-left">
+        <div class="owner-avatar">🙏</div>
+        <div class="owner-name" id="owner-name">Your Name Here</div>
+        <div class="owner-title">Founder & Chief Goshala Officer — Swastik Gopadma</div>
+        <div class="owner-contacts">
+          <div class="contact-row">
+            <div class="contact-icon">📞</div>
+            <div><div class="contact-val" id="owner-phone">+91 XXXXX XXXXX</div><div style="font-size:.78rem;color:var(--warm-gray)">Mon–Sat, 9 AM – 6 PM</div></div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">📧</div>
+            <div class="contact-val" id="owner-email">namaste@swastik.com</div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-val" id="owner-address">Your Farm / Shop Address</div>
+              <div style="font-size:.78rem;color:var(--warm-gray)" id="owner-city">City, State — PIN</div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">🕐</div>
+            <div><div class="contact-val">Mon–Sat: 9:00 AM – 6:00 PM</div><div style="font-size:.78rem;color:var(--warm-gray)">Sunday: 10 AM – 2 PM</div></div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">📱</div>
+            <div><div class="contact-val">WhatsApp: <span id="owner-wa">+91 XXXXX XXXXX</span></div><div style="font-size:.78rem;color:var(--warm-gray)">For quick order queries</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="owner-right">
+        <div class="map-container">
+          <!-- Replace the src below with your actual Google Maps embed URL -->
+          <!-- Get it from: maps.google.com → Share → Embed a map → Copy HTML → paste src URL below -->
+          <div class="map-placeholder">
+            <div style="font-size:3rem">🗺️</div>
+            <p>Replace this with Google Maps</p>
+            <p style="font-size:.7rem;margin-top:.3rem;opacity:.6">maps.google.com → Share → Embed</p>
+            <a href="https://maps.google.com" target="_blank" style="display:inline-block;margin-top:.75rem;background:var(--saffron);color:white;padding:7px 16px;border-radius:2px;text-decoration:none;font-family:var(--font-display);font-size:.62rem;letter-spacing:.12em">VIEW ON MAPS ✦</a>
+          </div>
+          <!-- UNCOMMENT BELOW AND REPLACE URL TO EMBED REAL MAP:
+          <iframe class="map-embed" src="YOUR_GOOGLE_MAPS_EMBED_URL_HERE" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          -->
+        </div>
+        <div style="margin-top:1rem;display:flex;flex-direction:column;gap:.5rem">
+          <div style="background:var(--cream);border:var(--border-gold);padding:.75rem 1rem;border-radius:4px;display:flex;align-items:center;gap:.75rem">
+            <span style="font-size:1.1rem">🐄</span>
+            <span style="font-size:.88rem;color:var(--warm-gray)"><strong style="color:var(--sandalwood-dark)">Farm visits welcome!</strong> Book a Goshala tour to see where your ghee is born.</span>
+          </div>
+          <div style="background:var(--cream);border:var(--border-gold);padding:.75rem 1rem;border-radius:4px;display:flex;align-items:center;gap:.75rem">
+            <span style="font-size:1.1rem">🚚</span>
+            <span style="font-size:.88rem;color:var(--warm-gray)">Free delivery on orders above <strong style="color:var(--sandalwood-dark)">₹999</strong> within city.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TESTIMONIALS ══════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-label">✦ Community Voices</span>
+      <h2 class="section-title" style="color:white">What Families Say</h2>
+      <div class="gold-div center"></div>
+    </div>
+    <div class="tcarousel">
+      <div class="ttrack" id="ttrack">
+        <div class="tcard"><div class="tstars">★★★★★</div><div class="ttext">"Gopadma Ghee is in a different league. The aroma when I open the jar takes me back to my grandmother's kitchen. You can literally smell the difference — this is real ghee."</div><div class="tauthor"><div class="tav">🧘</div><div><div class="tan">DR. PRIYA RAGHUNATHAN</div><div class="tac">Ayurvedic Physician · Coimbatore</div></div></div></div>
+        <div class="tcard"><div class="tstars">★★★★★</div><div class="ttext">"The millets are so fresh and clean — no husks, no dust. Foxtail millet khichdi every morning has genuinely changed my digestion. The cold pressed sesame oil is outstanding too."</div><div class="tauthor"><div class="tav">👩‍🍳</div><div><div class="tan">NALINI KRISHNAMURTHY</div><div class="tac">Vedic Cuisine Expert · Mysuru</div></div></div></div>
+        <div class="tcard"><div class="tstars">★★★★★</div><div class="ttext">"My son was lactose intolerant with every ghee brand. Since switching to Gopadma A2, his digestion improved dramatically. The Punganoor ghee is exceptional — rich, medicinal, rare."</div><div class="tauthor"><div class="tav">👨‍👩‍👦</div><div><div class="tan">RAHUL & MEENA JOSHI</div><div class="tac">Software Engineer · Pune</div></div></div></div>
+        <div class="tcard"><div class="tstars">★★★★★</div><div class="ttext">"I use Gopadma in my Yajna rituals every morning. The purity is exceptional — you can feel the Sattvic energy. The Gomutra Ark and panchgavya products are also excellent quality."</div><div class="tauthor"><div class="tav">🙏</div><div><div class="tan">PANDIT RAMESHWAR SHARMA</div><div class="tac">Vedic Scholar · Varanasi</div></div></div></div>
+        <div class="tcard"><div class="tstars">★★★★★</div><div class="ttext">"Ordered for parents in Bangalore. My mother called to say 'beta, this is real ghee!' — that's all the review I need. The bull-driven groundnut oil reminds her of village childhood."</div><div class="tauthor"><div class="tav">👴</div><div><div class="tan">VIKRAM HEGDE</div><div class="tac">NRI Customer · Singapore</div></div></div></div>
+      </div>
+    </div>
+    <div class="tcontrols">
+      <button class="tbtn" onclick="moveT(-1)">←</button>
+      <div class="tdots" id="tdots"></div>
+      <button class="tbtn" onclick="moveT(1)">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CHECKOUT ══════════ -->
+<section id="checkout">
+  <div class="container">
+    <div style="margin-bottom:2.5rem">
+      <span class="section-label reveal">✦ Sacred Delivery</span>
+      <h2 class="section-title reveal">Complete Your Order</h2>
+      <div class="gold-div reveal"></div>
+    </div>
+    <div class="checkout-grid">
+      <div>
+        <div class="form-sec-title reveal"><span>🏡</span> Source Address <span style="font-size:.65rem;color:var(--saffron);font-family:var(--font-display);letter-spacing:.14em">(FARM ORIGIN)</span></div>
+        <div class="frow">
+          <div class="fg"><label class="flabel">Farm / Source Name</label><input class="finput" value="Somnath Gir Farm, Gujarat" readonly></div>
+          <div class="fg"><label class="flabel">Batch Number</label><input class="finput" value="GG-2025-001" readonly></div>
+        </div>
+        <div class="fdiv"><span class="fdiv-text">✦ गंतव्य पता — Your Delivery Address ✦</span></div>
+        <div class="form-sec-title reveal"><span>🙏</span> Delivery Address</div>
+        <div class="frow">
+          <div class="fg"><label class="flabel">Full Name</label><input class="finput" id="c-name" placeholder="Your sacred name"></div>
+          <div class="fg"><label class="flabel">Phone</label><input class="finput" id="c-phone" placeholder="+91 XXXXX XXXXX"></div>
+        </div>
+        <div class="fg full"><label class="flabel">Email</label><input class="finput" id="c-email" placeholder="your@email.com"></div>
+        <div class="fg full"><label class="flabel">Street Address</label><input class="finput" id="c-addr" placeholder="House No, Street, Locality"></div>
+        <div class="frow">
+          <div class="fg"><label class="flabel">City</label><input class="finput" id="c-city" placeholder="Your city"></div>
+          <div class="fg"><label class="flabel">State</label><select class="fselect" id="c-state"><option value="">Select State</option><option>Karnataka</option><option>Maharashtra</option><option>Gujarat</option><option>Rajasthan</option><option>Tamil Nadu</option><option>Kerala</option><option>Andhra Pradesh</option><option>Telangana</option><option>Delhi</option><option>Uttar Pradesh</option><option>Other</option></select></div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label class="flabel">PIN Code</label><input class="finput" id="c-pin" placeholder="6-digit PIN" maxlength="6"></div>
+          <div class="fg"><label class="flabel">Delivery Preference</label><select class="fselect"><option>Standard (5–7 days)</option><option>Express (2–3 days)</option><option>Same-Day (select cities)</option></select></div>
+        </div>
+        <div class="fg full"><label class="flabel">Special Instructions</label><textarea class="ftextarea" placeholder="Leave at doorstep, gift message..."></textarea></div>
+      </div>
+      <div>
+        <div class="summary-card">
+          <div class="summary-title">🛒 Order Summary</div>
+          <div id="cart-items">
+            <div class="sum-item"><span>Gopadma A2 Ghee (500g)</span><span style="font-weight:600">₹899</span></div>
+          </div>
+          <div class="sum-item"><span>Delivery</span><span style="color:var(--forest);font-weight:600">FREE</span></div>
+          <div class="sum-item"><span>GST (5%)</span><span id="gst-val" style="font-weight:600">₹45</span></div>
+          <div class="sum-total"><span class="sum-total-label">Total</span><span class="sum-total-price" id="cart-total">₹944</span></div>
+          <div style="margin-top:1.2rem"><div class="flabel" style="margin-bottom:.6rem">Payment Method</div>
+            <div class="pm-list">
+              <label class="pm-opt sel" id="pm-rp"><input type="radio" name="pm" value="razorpay" checked onchange="selPM(this)"><span class="pm-icon">💳</span><span class="pm-label">Razorpay (Card/UPI/Netbanking)</span></label>
+              <label class="pm-opt" id="pm-cod"><input type="radio" name="pm" value="cod" onchange="selPM(this)"><span class="pm-icon">💵</span><span class="pm-label">Cash on Delivery</span></label>
+              <label class="pm-opt" id="pm-upi"><input type="radio" name="pm" value="upi" onchange="selPM(this)"><span class="pm-icon">📱</span><span class="pm-label">Direct UPI — swastik@upi</span></label>
+            </div>
+          </div>
+          <button class="btn-order" onclick="placeOrder()">🙏 PLACE SACRED ORDER</button>
+          <div class="sec-note">🔒 Secured by Razorpay · SSL Encrypted</div>
+          <div class="trust-row">
+            <div class="tbadge">✅ Authentic</div>
+            <div class="tbadge">📦 Premium Pack</div>
+            <div class="tbadge">🌿 FSSAI</div>
+            <div class="tbadge">↩️ 7-Day Returns</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TRACKING ══════════ -->
+<section id="tracking">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem">
+      <span class="section-label reveal">✦ Your Order Journey</span>
+      <h2 class="section-title reveal">Track My Order</h2>
+      <div class="gold-div center reveal"></div>
+    </div>
+    <div class="track-search">
+      <input id="track-in" placeholder="Enter Tracking ID (e.g. SWK-2025-1234)" onkeypress="if(event.key==='Enter')trackOrder()">
+      <button onclick="trackOrder()">TRACK ✦</button>
+    </div>
+    <div class="track-result" id="track-result">
+      <div class="track-head">
+        <div><div class="track-id-lbl" id="tr-id">✦ ORDER ID: SWK-2025-1234</div><div class="track-order-name">Gopadma A2 Bilona Ghee — 500g</div></div>
+        <div class="track-eta">Estimated Delivery<br><strong>March 27, 2025</strong></div>
+      </div>
+      <div class="timeline">
+        <div class="ts"><div class="ts-dot done">🌿</div><div class="ts-content"><div class="ts-title">Sourced from Sacred Farm</div><div class="ts-sub">Somnath Gir Farm, Talala — Gujarat</div><div class="ts-time">March 18, 2025 · 4:00 AM</div></div></div>
+        <div class="ts"><div class="ts-dot done">⚗️</div><div class="ts-content"><div class="ts-title">Bilona Churning & Processing</div><div class="ts-sub">Hand-churned & slow-cooked to golden perfection</div><div class="ts-time">March 18–19, 2025</div></div></div>
+        <div class="ts"><div class="ts-dot done">✅</div><div class="ts-content"><div class="ts-title">Lab Tested & Certified</div><div class="ts-sub">FSSAI & NABL Eurofins — Batch GG-2025-001 Passed</div><div class="ts-time">March 20, 2025</div></div></div>
+        <div class="ts"><div class="ts-dot done">📦</div><div class="ts-content"><div class="ts-title">Packed & Dispatched</div><div class="ts-sub">Glass-packed, dispatched from Ahmedabad Hub</div><div class="ts-time">March 21, 2025 · 2:30 PM</div></div></div>
+        <div class="ts"><div class="ts-dot cur">🚚</div><div class="ts-content"><div class="ts-title">Out for Delivery</div><div class="ts-sub">On its way! Partner: Shiprocket</div><div class="ts-time">March 23, 2025 · Expected today</div></div></div>
+        <div class="ts"><div class="ts-dot pend">🙏</div><div class="ts-content"><div class="ts-title" style="color:var(--warm-gray)">Delivered to Your Home</div><div class="ts-sub">Pending</div></div></div>
+      </div>
+      <div class="track-addrs">
+        <div class="addr-block"><h4>🏡 Source (Farm)</h4><p>Somnath Gir Farm<br>Talala Gir, Junagadh<br>Gujarat — 362150</p></div>
+        <div class="addr-block"><h4>📍 Destination (Your Address)</h4><p id="tr-dest">Priya Sharma<br>45, MG Road, Jayanagar<br>Bengaluru — 560041</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ BLOG ══════════ -->
+<section id="blog">
+  <div class="container">
+    <div class="blog-head">
+      <div class="reveal"><span class="section-label">✦ Vedic Wisdom</span><h2 class="section-title">Sacred Knowledge</h2><div class="gold-div"></div></div>
+      <div class="cat-filter reveal">
+        <button class="cf-btn active">All</button>
+        <button class="cf-btn" onclick="activateCf(this)">Ayurveda</button>
+        <button class="cf-btn" onclick="activateCf(this)">Recipes</button>
+        <button class="cf-btn" onclick="activateCf(this)">Millets</button>
+        <button class="cf-btn" onclick="activateCf(this)">Farm Life</button>
+      </div>
+    </div>
+    <div class="blog-grid">
+      <div class="bcard"><div class="bimg">🐄<span class="brt">8 min</span></div><div class="bcontent"><div class="bcat">✦ Farm Stories</div><h3 class="btitle">A Day at the Gir Farm — Where Your Ghee Begins at 4 AM</h3><p class="bexcerpt">Follow the complete 72-hour journey from predawn milking to bilona churning.</p><div class="bmeta">March 18, 2025</div></div></div>
+      <div class="bcard"><div class="bimg">⚗️<span class="brt">5 min</span></div><div class="bcontent"><div class="bcat">✦ Ayurveda</div><h3 class="btitle">Why Charaka Said Ghee is the Greatest of All Fats</h3><p class="bexcerpt">Ancient texts meet modern science — the surprising nutritional truth about A2 ghee.</p><div class="bmeta">March 12, 2025</div></div></div>
+      <div class="bcard"><div class="bimg">🌾<span class="brt">6 min</span></div><div class="bcontent"><div class="bcat">✦ Millets</div><h3 class="btitle">8 Sacred Millets — Ancient Superfoods for Modern Health</h3><p class="bexcerpt">From Navane to Oodalu — the complete guide to India's forgotten grain treasury.</p><div class="bmeta">March 5, 2025</div></div></div>
+    </div>
+  </div>
+  <div class="subscribe-bar">
+    <div class="sub-text"><strong>Vedic Wisdom</strong> weekly in your inbox. Join 12,000+ mindful families.</div>
+    <div class="sub-form"><input type="email" id="sub-email" placeholder="your@email.com"><button onclick="subscribe()">SUBSCRIBE ✦</button></div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:1rem">
+          <div class="swastik-logo" style="width:48px;height:48px;font-size:24px">卐</div>
+          <div><div style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--gold-pale);letter-spacing:.12em">SWASTIK</div><div style="font-size:.55rem;color:var(--saffron-light);letter-spacing:.18em;font-family:var(--font-devanagari)">गोपद्म — शुद्धं पवित्रम्</div></div>
+        </div>
+        <p>Bringing the healing wisdom of Vedic ancestors to modern homes. Every jar of Gopadma Ghee carries the blessings of sacred cows, ancient tradition, and unwavering purity.</p>
+        <div class="fcerts"><span class="fcert">FSSAI</span><span class="fcert">NABL Tested</span><span class="fcert">Organic</span><span class="fcert">A2 Verified</span></div>
+        <div class="fsocial">
+          <a href="#" class="fsoc-btn">📘</a><a href="#" class="fsoc-btn">📸</a><a href="#" class="fsoc-btn">▶️</a><a href="#" class="fsoc-btn">💬</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Shop</h4><ul><li><a href="#products">Gopadma A2 Ghee</a></li><li><a href="#products">Cold Pressed Oils</a></li><li><a href="#products">Bull Driven Oils</a></li><li><a href="#products">Organic Millets</a></li><li><a href="#products">Panchgavya Products</a></li><li><a href="#products">Gift Hampers</a></li></ul></div>
+      <div class="footer-col"><h4>Know Us</h4><ul><li><a href="#why">Our Story</a></li><li><a href="#cow-breeds">Sacred Breeds</a></li><li><a href="#purity">Lab Reports</a></li><li><a href="#blog">Vedic Blog</a></li><li><a href="#owner">Our Farm</a></li></ul></div>
+      <div class="footer-col"><h4>Support</h4><ul><li><a href="#tracking">Track Order</a></li><li><a href="#">Returns Policy</a></li><li><a href="#">Shipping Info</a></li><li><a href="#">FAQ</a></li><li><a href="#owner">Contact Us</a></li><li><a href="mailto:namaste@swastik.com">namaste@swastik.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Swastik Gopadma. Made with 🙏 in Bharat.<br>FSSAI: 11225999000XXX · GST: 29AAACS1234A1Z5</div>
+      <div class="footer-sym">ॐ 卐 ✦ ॐ</div>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /main -->
+
+<!-- ══════════ ADMIN OVERLAY ══════════ -->
+<div id="admin-overlay">
+  <div class="admin-panel">
+    <div class="admin-hdr"><div class="admin-hdr-title">卐 Swastik Admin — Sacred Control Center</div><button class="admin-close" onclick="closeAdmin()">✕</button></div>
+    <div id="admin-login" class="admin-login-form">
+      <h2>Admin Access</h2>
+      <p>Enter credentials. Demo: <strong>admin</strong> / <strong>swastik2025</strong></p>
+      <input class="admin-input" id="a-user" placeholder="Username">
+      <input class="admin-input" id="a-pass" type="password" placeholder="Password">
+      <button class="admin-btn" onclick="adminLogin()">ENTER DASHBOARD ✦</button>
+    </div>
+    <div id="admin-body" class="admin-body">
+      <div class="kpi-row">
+        <div class="kpi"><div class="kpi-lbl">Total Orders</div><div class="kpi-val">1,247</div><div class="kpi-change">↑ +23% this week</div><div class="sparkline" id="sp1"></div></div>
+        <div class="kpi"><div class="kpi-lbl">Revenue</div><div class="kpi-val">₹11.2L</div><div class="kpi-change">↑ +31% this month</div><div class="sparkline" id="sp2"></div></div>
+        <div class="kpi"><div class="kpi-lbl">Pending</div><div class="kpi-val">48</div><div class="kpi-change">⚠ 12 urgent</div><div class="sparkline" id="sp3"></div></div>
+        <div class="kpi"><div class="kpi-lbl">Satisfaction</div><div class="kpi-val">4.9★</div><div class="kpi-change">↑ 2,847 reviews</div><div class="sparkline" id="sp4"></div></div>
+      </div>
+      <div class="admin-tabs">
+        <button class="atab active" onclick="showAdminTab('products',this)">Manage Products & Prices</button>
+        <button class="atab" onclick="showAdminTab('orders',this)">Orders & Transactions</button>
+        <button class="atab" onclick="showAdminTab('settings',this)">Business Settings</button>
+      </div>
+      <!-- Products Tab -->
+      <div class="admin-tab-pane active" id="atab-products">
+        <div style="font-family:var(--font-display);font-size:.62rem;letter-spacing:.18em;color:var(--gold-light);margin-bottom:.75rem">SET 3 PRICE TIERS & STOCK FOR EACH PRODUCT</div>
+        <div class="admin-prod-grid" id="admin-prod-grid"></div>
+      </div>
+      <!-- Orders Tab -->
+      <div class="admin-tab-pane" id="atab-orders">
+        <table class="orders-tbl"><thead><tr><th>Order ID</th><th>Customer</th><th>Product</th><th>Amount</th><th>TXN ID</th><th>Status</th><th>Update</th></tr></thead><tbody id="orders-tbody"></tbody></table>
+      </div>
+      <!-- Settings Tab -->
+      <div class="admin-tab-pane" id="atab-settings">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:700px">
+          <div><div style="font-family:var(--font-display);font-size:.62rem;letter-spacing:.18em;color:var(--gold-light);margin-bottom:.75rem">OWNER DETAILS</div>
+            <input class="admin-input" id="set-name" placeholder="Owner Full Name">
+            <input class="admin-input" id="set-phone" placeholder="Phone Number">
+            <input class="admin-input" id="set-email" placeholder="Email Address">
+            <input class="admin-input" id="set-wa" placeholder="WhatsApp Number">
+          </div>
+          <div><div style="font-family:var(--font-display);font-size:.62rem;letter-spacing:.18em;color:var(--gold-light);margin-bottom:.75rem">FARM ADDRESS</div>
+            <input class="admin-input" id="set-addr" placeholder="Street / Farm Address">
+            <input class="admin-input" id="set-city" placeholder="City, State — PIN">
+            <input class="admin-input" id="set-map" placeholder="Google Maps Embed URL">
+            <button class="admin-btn" onclick="saveSettings()">SAVE SETTINGS ✦</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ JAVASCRIPT ══════════ -->
+<script>
+// ── PRODUCT DATABASE ──
+const PRODUCTS = {
+  ghee: [
+    {id:'ghee-1',name:'Gopadma A2 Bilona Ghee',san:'गोपद्म A2 बिलोना घृत',icon:'🧈',desc:'Hand-churned from Gir cow curd at 4 AM using wooden bilona. Slow-cooked over sacred cow-dung fire. Rich in CLA, Omega-3, Vitamins A,D,E,K.',tags:['A2 Gir Cow','Bilona Method','Lab Tested','Grass-fed'],variants:[{size:'250g',price:499,stock:45},{size:'500g',price:899,stock:30},{size:'1 Kg',price:1699,stock:15}],badge:'best',rating:'4.9',reviews:'2,847'},
+    {id:'ghee-2',name:'Punganoor Cow Ghee',san:'पुंगनूर गौ घृत — दुर्लभ',icon:'🐮',desc:"India's rarest breed. Punganoor cow milk has 8% fat — the richest of any Indian breed. Limited production. Highly medicinal and sattvic.",tags:['Punganoor Breed','8% Fat','Rare Limited','Medicinal'],variants:[{size:'100g',price:449,stock:8},{size:'250g',price:999,stock:5},{size:'500g',price:1849,stock:2}],badge:'new',rating:'5.0',reviews:'142'},
+    {id:'ghee-3',name:'Vedic Herbal Bilona Ghee',san:'वैदिक हर्बल बिलोना घृत',icon:'🌿',desc:'Traditional Bilona Ghee infused with Ashwagandha, Mulethi, Turmeric, Fenugreek. Ayurvedic joint support, immunity, and anti-inflammatory.',tags:['Herbal','Ashwagandha','Joint Care','Immunity'],variants:[{size:'200g',price:599,stock:20},{size:'500g',price:1299,stock:12},{size:'1 Kg',price:2399,stock:6}],rating:'4.8',reviews:'456'},
+    {id:'ghee-4',name:'Panch Gavya Ghrit',san:'पंचगव्य घृत — आयुर्वेदिक',icon:'🐄',desc:'Sacred formulation from 5 cow products: Gomutra, Gomay Ras, Cow Milk, Cow Curd, and Cow Ghee. Ancient Ayurvedic medicine for neurological and psychiatric health.',tags:['Panchgavya','Ayurvedic','Neurological','Sacred'],variants:[{size:'100g',price:399,stock:15},{size:'250g',price:899,stock:8},{size:'500g',price:1599,stock:3}],rating:'4.7',reviews:'234'},
+    {id:'ghee-5',name:'Go Ghrit (Desi Cow)',san:'गो घृत — देसी गौ का',icon:'✨',desc:'Pure traditional ghee from Indigenous Desi Sahiwal cows. Prepared by Bilona method at Pathmeda Gaushala. Rich golden color, granular texture, divine aroma.',tags:['Desi Cow','Sahiwal','Traditional','Pathmeda'],variants:[{size:'250g',price:449,stock:25},{size:'500g',price:849,stock:18},{size:'2 Kg',price:3199,stock:4}],rating:'4.8',reviews:'678'},
+  ],
+  'cold-oils': [
+    {id:'co-1',name:'Groundnut Oil (Cold Pressed)',san:'मूंगफली तेल — चेक्कु',icon:'🥜',desc:'Stone cold-pressed from select bold peanuts. No heat, no chemicals, no refining. Full-bodied taste, rich in Vitamin E and heart-healthy monounsaturated fats.',tags:['Cold Pressed','Unrefined','Vitamin E'],variants:[{size:'500ml',price:299,stock:50},{size:'1 Litre',price:549,stock:35},{size:'2 Litre',price:1049,stock:12}],badge:'best',rating:'4.8',reviews:'1,203'},
+    {id:'co-2',name:'Sesame Oil (Cold Pressed)',san:'तिल तेल — घानी का',icon:'🌰',desc:'Black sesame cold-pressed oil — revered in Ayurveda for Abhyanga massage and deep cooking. High in lignans, Sesamin, and antioxidants. Warm nutty aroma.',tags:['Black Sesame','Abhyanga','Lignans','Ayurvedic'],variants:[{size:'500ml',price:349,stock:40},{size:'1 Litre',price:649,stock:22},{size:'2 Litre',price:1249,stock:8}],rating:'4.9',reviews:'892'},
+    {id:'co-3',name:'Coconut Oil (Virgin)',san:'नारिकेल तेल — कुमारी',icon:'🥥',desc:'Single-press extraction from fresh Konkan coconuts within 2 hours of harvest. No heat, no chemicals. Pure lauric acid, MCTs for brain and metabolic health.',tags:['Virgin','No Heat','MCT','Kerala Farms'],variants:[{size:'500ml',price:299,stock:38},{size:'1 Litre',price:549,stock:20},{size:'2 Litre',price:1049,stock:7}],rating:'4.7',reviews:'745'},
+    {id:'co-4',name:'Mustard Oil (Cold Pressed)',san:'सरसों तेल — काच्ची घानी',icon:'💛',desc:'Kachi Ghani cold-pressed from black mustard seeds. Pungent, aromatic, antibacterial. Essential for North Indian, Bengali, and Rajasthani cooking traditions.',tags:['Kachi Ghani','Antibacterial','Pungent','North Indian'],variants:[{size:'500ml',price:249,stock:55},{size:'1 Litre',price:449,stock:30},{size:'2 Litre',price:849,stock:10}],rating:'4.6',reviews:'567'},
+    {id:'co-5',name:'Safflower Oil (Cold Pressed)',san:'करड़ी तेल — कुसुम',icon:'🌻',desc:'Cold-pressed from Kusuma/Safflower seeds. Highest Vitamin E content of any vegetable oil. Light, mild taste, high smoke point. Heart-protective Oleic acid.',tags:['High Vitamin E','Heart Health','Light Taste','Kusuma'],variants:[{size:'500ml',price:329,stock:28},{size:'1 Litre',price:599,stock:15},{size:'2 Litre',price:1149,stock:5}],rating:'4.7',reviews:'412'},
+    {id:'co-6',name:'Sunflower Oil (Cold Pressed)',san:'सूरजमुखी तेल — अपरिष्कृत',icon:'🌼',desc:"Cold-pressed unrefined sunflower oil. Light golden color, mild flavor. Rich in Vitamin E and Omega-6 fatty acids. India's most versatile cooking oil, unprocessed.",tags:['Unrefined','Light','Vitamin E','Versatile'],variants:[{size:'500ml',price:249,stock:60},{size:'1 Litre',price:449,stock:35},{size:'2 Litre',price:849,stock:12}],rating:'4.5',reviews:'634'},
+    {id:'co-7',name:'Niger Seed Oil (Uchellu)',san:'उचेल्लु तेल — uchillu',icon:'🖤',desc:"Karnataka's prized Uchellu (Niger/Ramtil) cold-pressed oil. Unique nutty flavor, exceptional for Karnataka-style cooking. Rich in palmitic and oleic acids, rare antioxidants.",tags:['Uchellu','Karnataka','Ramtil','Rare'],variants:[{size:'250ml',price:299,stock:18},{size:'500ml',price:549,stock:10},{size:'1 Litre',price:999,stock:4}],rating:'4.8',reviews:'198'},
+    {id:'co-8',name:'Flaxseed Oil (Cold Pressed)',san:'अलसी तेल — ओमेगा-3',icon:'🔵',desc:'Cold-pressed linseed oil, the richest plant source of Omega-3 alpha-linolenic acid (ALA). For salad dressings, smoothies, and therapeutic use. Never for high-heat cooking.',tags:['Omega-3','ALA','Therapeutic','Raw Use'],variants:[{size:'250ml',price:349,stock:22},{size:'500ml',price:649,stock:12},{size:'1 Litre',price:1199,stock:5}],rating:'4.6',reviews:'287'},
+  ],
+  'bull-oils': [
+    {id:'bo-1',name:'Bull Driven Groundnut Oil',san:'ಬಸವನ ಘಾಣಿ ಶೇಂಗಾ ತೈಲ',icon:'🐂',desc:"Traditional wooden-press oil extracted using Bull-driven Ghani. Zero heat, maximum nutrition. Karnataka's favorite cold-process groundnut oil — smoky, rich, authentic.",tags:['Bull Ghani','Zero Heat','Traditional','Karnataka'],variants:[{size:'500ml',price:349,stock:30},{size:'1 Litre',price:649,stock:18},{size:'2 Litre',price:1249,stock:6}],badge:'best',rating:'4.9',reviews:'1,087'},
+    {id:'bo-2',name:'Bull Driven Sesame Oil',san:'ಬಸವನ ಘಾಣಿ ಎಳ್ಳು ತೈಲ',icon:'🐂',desc:'White sesame bull-driven extraction. Slower, cooler process preserves maximum sesamin and lignans. Traditional South Indian cooking essential — for tadkas, rice, massage.',tags:['Bull Ghani','Sesamin','South Indian','Tadka'],variants:[{size:'500ml',price:399,stock:25},{size:'1 Litre',price:749,stock:14},{size:'2 Litre',price:1449,stock:5}],rating:'4.8',reviews:'643'},
+    {id:'bo-3',name:'Bull Driven Coconut Oil',san:'ಬಸವನ ಘಾಣಿ ತೆಂಗಿನ ತೈಲ',icon:'🥥',desc:'Dried coconut (kopra) bull-ghani pressed oil. Traditional Kerala method yields bold coconut aroma and rich taste. High lauric acid for immunity, metabolism, skin.',tags:['Kopra Pressed','Bold Aroma','Lauric Acid','Kerala'],variants:[{size:'500ml',price:329,stock:35},{size:'1 Litre',price:599,stock:20},{size:'2 Litre',price:1149,stock:8}],rating:'4.7',reviews:'578'},
+    {id:'bo-4',name:'Bull Driven Mustard Oil',san:'ಬಸವನ ಘಾಣಿ ಸಾಸಿವೆ ತೈಲ',icon:'💛',desc:'Traditional bull-ghani Kachi mustard oil. Strongest pungency and antibacterial potency. Used in Ayurvedic massage (Abhyanga) and North Indian authentic cooking.',tags:['Kachi Ghani','Most Pungent','Ayurvedic','Antibacterial'],variants:[{size:'500ml',price:279,stock:40},{size:'1 Litre',price:499,stock:22},{size:'2 Litre',price:949,stock:8}],rating:'4.6',reviews:'421'},
+    {id:'bo-5',name:'Bull Driven Safflower Oil',san:'ಬಸವನ ಘಾಣಿ ಕುಸುಮ ತೈಲ',icon:'🌻',desc:'Bull-pressed Karnataka safflower (Kusuma) oil. Regional specialty oil with mild nutty note. Traditionally used in Udupi cooking and Ayurvedic preparations.',tags:['Kusuma','Udupi','Regional','Ayurvedic'],variants:[{size:'500ml',price:379,stock:18},{size:'1 Litre',price:699,stock:10},{size:'2 Litre',price:1349,stock:3}],rating:'4.7',reviews:'312'},
+    {id:'bo-6',name:'Bull Driven Sunflower Oil',san:'ಬಸವನ ಘಾಣಿ ಸೂರ್ಯಕಾಂತಿ ತೈಲ',icon:'🌼',desc:'Traditional bull-pressed sunflower oil retaining full natural Vitamin E, phytosterols, and polyphenols lost in commercial refining. Light and clean for daily cooking.',tags:['Full Nutrition','Phytosterols','Light','Daily Use'],variants:[{size:'500ml',price:279,stock:45},{size:'1 Litre',price:499,stock:28},{size:'2 Litre',price:949,stock:10}],rating:'4.5',reviews:'489'},
+    {id:'bo-7',name:'Bull Driven Niger Seed Oil',san:'ಬಸವನ ಘಾಣಿ ಉಚೆಲ್ಲು ತೈಲ',icon:'🖤',desc:"Karnataka's heritage Uchellu oil, bull-pressed. Darker, more intense, more aromatic than cold-pressed version. Beloved in Malnad and coastal Karnataka cuisine.",tags:['Uchellu','Heritage','Malnad','Intense'],variants:[{size:'250ml',price:349,stock:12},{size:'500ml',price:629,stock:7},{size:'1 Litre',price:1149,stock:2}],rating:'4.9',reviews:'167'},
+    {id:'bo-8',name:'Bull Driven Almond Oil',san:'ਬਾਦਾਮ ਤੇਲ — ਬੈਲ ਘਾਣੀ',icon:'🤎',desc:"Traditional bull-pressed sweet almond oil. Premium quality for Ayurvedic therapeutic use — massage, hair oil, skin nourishment, and children's daily oil abhyanga.",tags:['Sweet Almond','Therapeutic','Hair Oil','Children'],variants:[{size:'100ml',price:399,stock:15},{size:'250ml',price:849,stock:8},{size:'500ml',price:1549,stock:3}],badge:'new',rating:'4.8',reviews:'98'},
+  ],
+  millets: [
+    {id:'m-1',name:'Foxtail Millet (Navane)',san:'नवाने / कांगनी — Setaria italica',icon:'🌾',desc:'Ancient superfood grain, low glycemic index. Rich in Iron and Calcium. Certified organic, unpolished. Perfect for khichdi, upma, porridge, and traditional Karnataka meals.',tags:['Low GI','Iron Rich','Organic','Unpolished'],variants:[{size:'500g',price:89,stock:100},{size:'1 Kg',price:159,stock:75},{size:'2 Kg',price:299,stock:40}],badge:'best',rating:'4.8',reviews:'1,456'},
+    {id:'m-2',name:'Kodo Millet (Harka)',san:'हार्का / कोदो — Paspalum scrobiculatum',icon:'🌾',desc:'Anti-diabetic millet with highest fiber content. Traditionally used for fasting and weight management. Strong, nutty flavor — excellent for rice substitute and fermented dishes.',tags:['Anti-Diabetic','High Fiber','Fasting','Weight Loss'],variants:[{size:'500g',price:99,stock:80},{size:'1 Kg',price:179,stock:60},{size:'2 Kg',price:339,stock:25}],rating:'4.7',reviews:'823'},
+    {id:'m-3',name:'Little Millet (Saame)',san:'साम्ये — Panicum sumatrense',icon:'🌾',desc:'Tiniest millet, highest in fat and folic acid. Excellent for pregnant mothers and children. Soft texture when cooked — used as rice replacement in traditional South Indian cooking.',tags:['Folic Acid','Pregnancy','Children','Soft Texture'],variants:[{size:'500g',price:95,stock:90},{size:'1 Kg',price:169,stock:55},{size:'2 Kg',price:319,stock:22}],rating:'4.7',reviews:'634'},
+    {id:'m-4',name:'Barnyard Millet (Oodalu)',san:'ओदलु — Echinochloa frumentacea',icon:'🌾',desc:'Fastest-growing millet — most popular for Ekadashi and Navratri fasting. Highest iron content among all millets. Dense, filling, easy to cook. Traditionally consumed during all Hindu fasts.',tags:['Navratri Fasting','Highest Iron','Quick Cook','Dense'],variants:[{size:'500g',price:89,stock:120},{size:'1 Kg',price:159,stock:80},{size:'2 Kg',price:299,stock:35}],badge:'best',rating:'4.8',reviews:'1,021'},
+    {id:'m-5',name:'Browntop Millet (Korale)',san:'कोरले — Brachiaria ramosa',icon:'🌾',desc:"India's fastest growing 60-day crop. Exceptional detoxification properties, helps flush heavy metals. Rare variety — Karnataka's heritage millet used in traditional Kodagu and Malnad cuisine.",tags:['Detox','60-Day Crop','Rare','Kodagu'],variants:[{size:'500g',price:109,stock:60},{size:'1 Kg',price:199,stock:35},{size:'2 Kg',price:379,stock:14}],rating:'4.6',reviews:'387'},
+    {id:'m-6',name:'Proso Millet (Baragu)',san:'बरागु — Panicum miliaceum',icon:'🌾',desc:'Most heat-tolerant and drought-resistant millet. Rich in B vitamins and Leucine. Traditional Rajasthani and Deccan millet — used in khichdi, roti, and Ayurvedic preparations.',tags:['Drought Resistant','B Vitamins','Leucine','Rajasthani'],variants:[{size:'500g',price:95,stock:70},{size:'1 Kg',price:169,stock:45},{size:'2 Kg',price:319,stock:18}],rating:'4.5',reviews:'298'},
+    {id:'m-7',name:'Finger Millet (Ragi)',san:'राग़ी / केलवरगु — Eleusine coracana',icon:'🟤',desc:"Karnataka's most loved millet. Highest Calcium content of any food grain — 5× more than milk. Perfect for bone health, diabetes management. Essential for Ragi mudde, ragi java.",tags:['Highest Calcium','Bone Health','Diabetes','Ragi Mudde'],variants:[{size:'500g',price:79,stock:150},{size:'1 Kg',price:139,stock:100},{size:'5 Kg',price:649,stock:30}],badge:'best',rating:'4.9',reviews:'2,341'},
+    {id:'m-8',name:'Pearl Millet (Bajra)',san:'बाजरा — Pennisetum glaucum',icon:'⚫',desc:'Most widely consumed millet in India. Highest protein and fat content. Energizing winter millet — warm potency (Ushna). Essential for Bajra roti, khichdi, and traditional Rajasthani thali.',tags:['High Protein','Winter Millet','Ushna','Bajra Roti'],variants:[{size:'500g',price:69,stock:180},{size:'1 Kg',price:119,stock:120},{size:'5 Kg',price:549,stock:45}],rating:'4.7',reviews:'1,678'},
+  ],
+  panchgavya: [
+    {id:'pg-1',name:'Gomutra Ark (Cow Urine Distillate)',san:'गोमूत्र अर्क — दिव्य औषधि',icon:'💧',desc:"Sacred cow urine distillate — distilled from indigenous Desi cow's urine. Ancient Ayurvedic detoxifier and immunity booster. Shelf-stable, odorless. Used in cancer care protocols at AIIMS.",tags:['Ayurvedic','Detox','Immunity','Cancer Support'],variants:[{size:'450ml',price:149,stock:60},{size:'900ml',price:269,stock:35},{size:'1.8 Litre',price:499,stock:15}],rating:'4.6',reviews:'456'},
+    {id:'pg-2',name:'Panchgavya Soap',san:'पंचगव्य साबुन — त्वचा रक्षक',icon:'🧼',desc:'Handcrafted soap from 5 sacred cow products. Anti-bacterial, anti-fungal. Cures acne, eczema, and skin infections naturally. No chemicals, SLS-free, paraben-free.',tags:['Panchgavya','Acne','Eczema','SLS-Free'],variants:[{size:'75g',price:89,stock:80},{size:'150g',price:159,stock:50},{size:'3 Pack',price:249,stock:25}],badge:'new',rating:'4.7',reviews:'321'},
+    {id:'pg-3',name:'Panchgavya Shampoo',san:'पंचगव्य शैम्पू — केश रक्षक',icon:'🧴',desc:'Ayurvedic shampoo based on cow milk, curd, and ghee. Nourishes scalp, reduces hair fall, stimulates growth. Herbal blend with Brahmi, Shikakai, and Amla. No sulphates.',tags:['Hair Fall','Brahmi','Shikakai','Sulphate-Free'],variants:[{size:'200ml',price:249,stock:40},{size:'400ml',price:449,stock:22},{size:'800ml',price:799,stock:8}],rating:'4.5',reviews:'213'},
+    {id:'pg-4',name:'Cow Dung Cakes (Upla)',san:'गोबर उपला — यज्ञ ईंधन',icon:'🟤',desc:'Sun-dried sacred cow dung patties from indigenous Gir cows. Essential fuel for Vedic Havan and Yajna rituals. Pure sattvic energy. Reduces atmospheric pollution when burned.',tags:['Havan','Yajna','Sattvic','Sacred Ritual'],variants:[{size:'5 Pieces',price:99,stock:100},{size:'10 Pieces',price:179,stock:65},{size:'20 Pieces',price:339,stock:30}],rating:'4.9',reviews:'678'},
+    {id:'pg-5',name:'Jeevamrit (Cow Dung Fertilizer)',san:'जीवामृत — जैविक खाद',icon:'🌱',desc:'Organic bio-fertilizer from Desi cow dung, Gomutra, jaggery, gram flour, and soil. Sacred natural fertilizer enriching soil microbiome. Completely chemical-free gardening.',tags:['Organic','Bio-Fertilizer','Garden','Chemical-Free'],variants:[{size:'1 Kg',price:129,stock:70},{size:'5 Kg',price:549,stock:30},{size:'10 Kg',price:999,stock:12}],rating:'4.7',reviews:'234'},
+    {id:'pg-6',name:'Desi Cow Milk Powder',san:'देसी गौ दूध पाउडर',icon:'🥛',desc:'Spray-dried A2 Gir cow whole milk powder. No additives, no preservatives. Travel-friendly, long shelf-life. Perfect for Ayurvedic preparations, travel, and areas without fresh supply.',tags:['A2 Gir','Spray-Dried','No Additives','Travel'],variants:[{size:'250g',price:349,stock:35},{size:'500g',price:649,stock:18},{size:'1 Kg',price:1199,stock:7}],rating:'4.6',reviews:'312'},
+    {id:'pg-7',name:'Panchgavya Hair Oil',san:'पंचगव्य केश तेल',icon:'💆',desc:'Medicated hair oil with cow ghee base, gomutra, brahmi, bhringraj, hibiscus. Deeply nourishes hair roots, prevents premature graying, stimulates hair growth.',tags:['Bhringraj','Brahmi','Graying','Hair Growth'],variants:[{size:'100ml',price:249,stock:45},{size:'200ml',price:449,stock:28},{size:'500ml',price:999,stock:10}],rating:'4.7',reviews:'445'},
+    {id:'pg-8',name:'Nasya Drops (Herbal Nasal Oil)',san:'नस्य तेल — मस्तिष्क पोषण',icon:'💚',desc:'Ayurvedic Pratimarsha Nasya oil with Cow ghee, Anu Tailam, and 28 herbs. Clears nasal passages, nourishes brain, improves memory and concentration. Ancient daily ritual.',tags:['Nasya','Brain Health','Memory','Daily Ritual'],variants:[{size:'15ml',price:199,stock:50},{size:'30ml',price:349,stock:28},{size:'60ml',price:599,stock:12}],badge:'new',rating:'4.8',reviews:'187'},
+  ],
+  flours: [
+    {id:'fl-1',name:'Finger Millet Flour (Ragi)',san:'राग़ी हिट्टू — Ragi Hittu',icon:'🟤',desc:"Freshly stone-ground unfermented Ragi flour. Karnataka's staple — for Ragi Mudde, Ragi Java, Ragi Roti. Highest calcium of any flour. Excellent for children's growth.",tags:['Stone Ground','Ragi Mudde','Calcium','Children'],variants:[{size:'500g',price:75,stock:100},{size:'1 Kg',price:129,stock:70},{size:'5 Kg',price:599,stock:20}],badge:'best',rating:'4.9',reviews:'1,234'},
+    {id:'fl-2',name:'Foxtail Millet Flour (Navane)',san:'नवाने हिट्टू — Low GI',icon:'🌾',desc:'Stone-ground Foxtail millet flour. Excellent for diabetics — extremely low glycemic index. Use for roti, idli, dosa, porridge. Subtle sweet nutty flavor.',tags:['Low GI','Diabetic Friendly','Roti','Dosa'],variants:[{size:'500g',price:79,stock:80},{size:'1 Kg',price:139,stock:50},{size:'3 Kg',price:399,stock:15}],rating:'4.7',reviews:'567'},
+    {id:'fl-3',name:'Multi Millet Flour',san:'पंच धान्य हिट्टू — 5 Millets',icon:'🌰',desc:'Perfectly blended 5-millet flour: Ragi, Foxtail, Little, Barnyard, Pearl. Complete amino acid profile. One flour for all your cooking needs — roti, porridge, laddu, khichdi.',tags:['5 Millets','Complete Protein','All Purpose','Blend'],variants:[{size:'500g',price:99,stock:60},{size:'1 Kg',price:179,stock:40},{size:'3 Kg',price:499,stock:12}],rating:'4.8',reviews:'678'},
+    {id:'fl-4',name:'Pearl Millet Flour (Bajra)',san:'बाजरा आटा — ऊर्जावर्धक',icon:'⚫',desc:'Traditional stone-ground Bajra flour. High protein, high iron, energizing winter flour. For Bajra roti, Rajasthani thali, and traditional North Indian comfort food.',tags:['High Protein','Iron','Winter','Bajra Roti'],variants:[{size:'500g',price:69,stock:90},{size:'1 Kg',price:119,stock:60},{size:'5 Kg',price:549,stock:20}],rating:'4.6',reviews:'456'},
+    {id:'fl-5',name:'Ragi Malt (Sprouted Flour)',san:'राग़ी माल्ट — अंकुरित',icon:'🟤',desc:"Sprouted and dried Ragi before stone-grinding. Sprouting increases nutrition by 300%. Karnataka's traditional Ragi Java / Ambli starter. For babies above 6 months — Pediatrician recommended.",tags:['Sprouted','Babies','Java','300% More Nutrients'],variants:[{size:'250g',price:149,stock:45},{size:'500g',price:269,stock:28},{size:'1 Kg',price:499,stock:12}],badge:'new',rating:'4.9',reviews:'345'},
+    {id:'fl-6',name:'Millet Rava (Coarse Grind)',san:'ミलेट रवा — सूजी विकल्प',icon:'🌾',desc:'Coarse-ground mixed millet semolina — healthy alternative to wheat rava/suji. For upma, halwa, idli. Gluten-free and diabetic-friendly wheat replacement.',tags:['Gluten Free','Upma','Wheat Alternative','Diabetic'],variants:[{size:'500g',price:89,stock:70},{size:'1 Kg',price:159,stock:45},{size:'3 Kg',price:449,stock:15}],rating:'4.6',reviews:'389'},
+  ]
+};
+
+// ── STATE ──
+let productState = {};
+// Initialize from localStorage
+function initState(){
+  const saved = JSON.parse(localStorage.getItem('swastik_products') || '{}');
+  Object.keys(PRODUCTS).forEach(cat => {
+    PRODUCTS[cat].forEach(p => {
+      productState[p.id] = saved[p.id] || {
+        variants: p.variants.map(v=>({...v}))
+      };
+    });
+  });
+}
+initState();
+
+// Save state
+function saveProductState(){
+  localStorage.setItem('swastik_products', JSON.stringify(productState));
+}
+
+function getVariant(id){ return productState[id] ? productState[id].variants : null; }
+
+// ── RENDER PRODUCTS ──
+function renderProducts(){
+  Object.keys(PRODUCTS).forEach(cat => {
+    const grid = document.getElementById('grid-'+cat);
+    if(!grid) return;
+    grid.innerHTML = PRODUCTS[cat].map(p => renderCard(p)).join('');
+  });
+}
+
+function renderCard(p){
+  const vs = productState[p.id]?.variants || p.variants;
+  const activeV = vs[0];
+  const allOOS = vs.every(v=>v.stock===0);
+  const badge = p.badge==='best' ? '<span class="pcard-badge badge-best">✦ BESTSELLER</span>' : p.badge==='new' ? '<span class="pcard-badge badge-new">✦ NEW</span>' : '';
+  const oosBadge = allOOS ? '<span class="pcard-badge badge-oos" style="right:.8rem;left:auto">OUT OF STOCK</span>' : '';
+  const varBtns = vs.map((v,i)=>{
+    const oos = v.stock===0;
+    return `<div class="pv-btn ${i===0?'active':''} ${oos?'oos':''}" onclick="${oos?'':''}" data-pid="${p.id}" data-vidx="${i}">
+      <span class="pv-size">${v.size}</span>
+      <span class="pv-price">₹${v.price}</span>
+      <span class="pv-stock">${v.stock>0?'Stock: '+v.stock:'Out of Stock'}</span>
+      ${oos?'<div class="pv-oos-label">Out of Stock</div>':''}
+    </div>`;
+  }).join('');
+  return `<div class="pcard" id="pcard-${p.id}">
+    <div class="pcard-img">${p.icon}${badge}${oosBadge}</div>
+    <div class="pcard-body">
+      <div class="pcard-reviews"><span class="stars">★★★★★</span> ${p.rating} · ${p.reviews} reviews</div>
+      <div class="pcard-name">${p.name}</div>
+      <div class="pcard-san">${p.san}</div>
+      <p class="pcard-desc">${p.desc}</p>
+      <div class="pcard-tags">${p.tags.map(t=>`<span class="ptag">${t}</span>`).join('')}</div>
+      <div class="price-variants" id="pv-${p.id}">${varBtns}</div>
+      <div class="pcard-footer">
+        <div class="pcard-price" id="price-${p.id}">₹${activeV.price} <span>/ ${activeV.size}</span></div>
+        <button class="btn-add" id="btn-${p.id}" ${allOOS?'disabled':''} onclick="addToCart('${p.id}','${p.name}')">${allOOS?'Out of Stock':'✦ Add to Cart'}</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+// Attach variant click events after render
+function attachVariantEvents(){
+  document.querySelectorAll('.pv-btn').forEach(btn=>{
+    if(btn.classList.contains('oos')) return;
+    btn.addEventListener('click',function(){
+      const pid = this.dataset.pid;
+      const vidx = parseInt(this.dataset.vidx);
+      const vs = productState[pid]?.variants || [];
+      const v = vs[vidx];
+      if(!v || v.stock===0) return;
+      document.querySelectorAll(`[data-pid="${pid}"]`).forEach(b=>b.classList.remove('active'));
+      this.classList.add('active');
+      document.getElementById('price-'+pid).innerHTML = `₹${v.price} <span>/ ${v.size}</span>`;
+    });
+  });
+}
+
+// ── CATEGORY TABS ──
+function showCat(cat, btn){
+  document.querySelectorAll('.cat-section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.cat-tab').forEach(b=>b.classList.remove('active'));
+  document.getElementById('cat-'+cat).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ── CART ──
+let cart = [];
+function addToCart(pid, name){
+  const activeBtn = document.querySelector(`[data-pid="${pid}"].active`);
+  const vidx = activeBtn ? parseInt(activeBtn.dataset.vidx) : 0;
+  const v = productState[pid]?.variants[vidx];
+  if(!v || v.stock===0){ toast('Out of Stock','This variant is currently out of stock.','⚠️'); return; }
+  cart.push({pid, name, size:v.size, price:v.price, vidx});
+  updateCartSummary();
+  toast('Added to Cart ✦',`${name} (${v.size}) — ₹${v.price}`,'🛒');
+}
+function updateCartSummary(){
+  const ci = document.getElementById('cart-items');
+  if(!cart.length){ci.innerHTML='<div class="sum-item"><span>No items yet</span><span>₹0</span></div>';return;}
+  const subtotal = cart.reduce((a,c)=>a+c.price,0);
+  const gst = Math.round(subtotal*0.05);
+  ci.innerHTML = cart.map(c=>`<div class="sum-item"><span>${c.name} (${c.size})</span><span style="font-weight:600">₹${c.price}</span></div>`).join('');
+  document.getElementById('gst-val').textContent = '₹'+gst;
+  document.getElementById('cart-total').textContent = '₹'+(subtotal+gst);
+}
+
+// ── NAV ──
+const nav = document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled', window.scrollY>50);
+  const pct = window.scrollY/(document.body.scrollHeight-window.innerHeight);
+  document.getElementById('sticky-cta').classList.toggle('vis', pct>0.2);
+});
+function toggleMenu(){document.getElementById('nav-links').classList.toggle('open')}
+
+// ── SCROLL REVEAL ──
+const obs = new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('vis')),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(r=>obs.observe(r));
+
+// ── COUNTDOWN ──
+(function countdown(){
+  const t = new Date(); t.setDate(t.getDate()+7); t.setHours(0,0,0,0);
+  setInterval(()=>{
+    const d = t-new Date(); if(d<=0)return;
+    document.getElementById('cd-d').textContent=String(Math.floor(d/86400000)).padStart(2,'0');
+    document.getElementById('cd-h').textContent=String(Math.floor((d%86400000)/3600000)).padStart(2,'0');
+    document.getElementById('cd-m').textContent=String(Math.floor((d%3600000)/60000)).padStart(2,'0');
+    document.getElementById('cd-s').textContent=String(Math.floor((d%60000)/1000)).padStart(2,'0');
+  },1000);
+})();
+
+// ── TOAST ──
+function toast(title, msg, icon='🙏'){
+  const t=document.getElementById('toast');
+  document.getElementById('t-title').textContent=title;
+  document.getElementById('t-msg').textContent=msg;
+  document.getElementById('t-icon').textContent=icon;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),4000);
+}
+
+// ── WAITLIST ──
+function joinWaitlist(){
+  const e=document.getElementById('wl-email').value.trim();
+  if(!e||!e.includes('@')){toast('Error','Please enter a valid email.','⚠️');return;}
+  toast('JAI GOPADMA! 🙏',`${e} added to waitlist. Batch #001 ships in 7 days!`,'✦');
+  document.getElementById('wl-email').value='';
+}
+
+// ── TESTIMONIALS ──
+let tIdx=0;
+const tcards=document.querySelectorAll('.tcard');
+const tdots=document.getElementById('tdots');
+tcards.forEach((_,i)=>{const d=document.createElement('div');d.className='tdot'+(i===0?' active':'');d.onclick=()=>{tIdx=i;updateT()};tdots.appendChild(d)});
+function moveT(d){tIdx=(tIdx+d+tcards.length)%tcards.length;updateT()}
+function updateT(){
+  const w=tcards[0].offsetWidth+24;
+  document.getElementById('ttrack').style.transform=`translateX(-${tIdx*w}px)`;
+  document.querySelectorAll('.tdot').forEach((d,i)=>d.classList.toggle('active',i===tIdx));
+}
+setInterval(()=>moveT(1),5500);
+
+// ── TRACKING ──
+function generateTID(){return `SWK-${new Date().getFullYear()}-${Math.floor(1000+Math.random()*9000)}${String.fromCharCode(65+Math.floor(Math.random()*26))}`}
+function trackOrder(){
+  const v=document.getElementById('track-in').value.trim();
+  if(!v){toast('Error','Please enter your Tracking ID.','⚠️');return;}
+  const r=document.getElementById('track-result');
+  r.classList.add('vis');
+  document.getElementById('tr-id').textContent=`✦ ORDER ID: ${v}`;
+  const orders=JSON.parse(localStorage.getItem('swastik_orders')||'[]');
+  const o=orders.find(x=>x.tid===v);
+  if(o) document.getElementById('tr-dest').innerHTML=`${o.name}<br>${o.address}<br>${o.city}`;
+  r.scrollIntoView({behavior:'smooth',block:'center'});
+  toast('Order Found ✦',`Tracking loaded for: ${v}`,'✅');
+}
+
+// ── PAYMENT ──
+function selPM(radio){document.querySelectorAll('.pm-opt').forEach(o=>o.classList.remove('sel'));radio.closest('.pm-opt').classList.add('sel')}
+function placeOrder(){
+  const name=document.getElementById('c-name').value.trim();
+  const phone=document.getElementById('c-phone').value.trim();
+  const email=document.getElementById('c-email').value.trim();
+  const addr=document.getElementById('c-addr').value.trim();
+  const city=document.getElementById('c-city').value.trim();
+  if(!name||!phone||!email||!addr||!city){toast('Missing Info','Please fill all required delivery fields.','⚠️');return;}
+  if(!cart.length){toast('Empty Cart','Please add items to cart first.','⚠️');return;}
+  const pm=document.querySelector('input[name="pm"]:checked').value;
+  const tid=generateTID();
+  const subtotal=cart.reduce((a,c)=>a+c.price,0);
+  const total=subtotal+Math.round(subtotal*0.05);
+  if(pm==='razorpay'){
+    toast('Processing...','Connecting to Razorpay...','💳');
+    setTimeout(()=>{
+      const txn='pay_'+Math.random().toString(36).substr(2,14).toUpperCase();
+      const order={tid,txn,amount:total,name,email,phone,address:addr,city,products:cart.map(c=>c.name+' '+c.size),timestamp:new Date().toISOString(),status:'Confirmed'};
+      const orders=JSON.parse(localStorage.getItem('swastik_orders')||'[]');
+      orders.push(order);
+      localStorage.setItem('swastik_orders',JSON.stringify(orders));
+      document.getElementById('track-in').value=tid;
+      toast('🎉 ORDER CONFIRMED!',`${name}, Tracking: ${tid} | TXN: ${txn}`,'🙏');
+    },2000);
+  } else if(pm==='cod'){
+    const order={tid,txn:'COD',amount:total,name,email,phone,address:addr,city,products:cart.map(c=>c.name),timestamp:new Date().toISOString(),status:'Confirmed'};
+    const orders=JSON.parse(localStorage.getItem('swastik_orders')||'[]');
+    orders.push(order);
+    localStorage.setItem('swastik_orders',JSON.stringify(orders));
+    document.getElementById('track-in').value=tid;
+    toast('COD Order Confirmed!',`${name}, your order is placed! Tracking: ${tid}`,'🎉');
+  } else {
+    toast('UPI Payment',`Send ₹${total} to swastik@upi and quote: ${tid}`,'📱');
+  }
+}
+
+// ── ADMIN ──
+function openAdmin(){document.getElementById('admin-overlay').classList.add('open')}
+function closeAdmin(){document.getElementById('admin-overlay').classList.remove('open')}
+document.getElementById('admin-overlay').addEventListener('click',function(e){if(e.target===this)closeAdmin()});
+function adminLogin(){
+  if(document.getElementById('a-user').value==='admin'&&document.getElementById('a-pass').value==='swastik2025'){
+    document.getElementById('admin-login').style.display='none';
+    document.getElementById('admin-body').classList.add('vis');
+    loadAdminData();
+  } else toast('Access Denied','Invalid credentials.','🔒');
+}
+function showAdminTab(tab, btn){
+  document.querySelectorAll('.admin-tab-pane').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.atab').forEach(b=>b.classList.remove('active'));
+  document.getElementById('atab-'+tab).classList.add('active');
+  btn.classList.add('active');
+}
+function loadAdminData(){
+  // Sparklines
+  ['sp1','sp2','sp3','sp4'].forEach(id=>{
+    const el=document.getElementById(id);
+    el.innerHTML=Array.from({length:8},()=>`<div class="sb" style="height:${20+Math.random()*80}%"></div>`).join('');
+  });
+  // Product manager
+  const grid=document.getElementById('admin-prod-grid');
+  grid.innerHTML='';
+  Object.keys(PRODUCTS).forEach(cat=>{
+    PRODUCTS[cat].forEach(p=>{
+      const vs=productState[p.id]?.variants||p.variants;
+      const card=document.createElement('div');
+      card.className='admin-prod-card';
+      card.innerHTML=`<div class="ap-name">${p.icon} ${p.name}</div>
+        <div class="ap-variants">${vs.map((v,i)=>{
+          const oos=v.stock===0;
+          return `<div class="ap-var">
+            <span class="ap-var-lbl">${v.size}</span>
+            <input class="ap-price-inp" type="number" value="${v.price}" id="ap-price-${p.id}-${i}" placeholder="₹Price">
+            <input class="ap-stock-inp" type="number" value="${v.stock}" id="ap-stock-${p.id}-${i}" min="0" placeholder="Stock">
+            <span class="ap-oos" id="ap-oos-${p.id}-${i}">${oos?'OOS':''}</span>
+          </div>`;
+        }).join('')}</div>
+        <button class="ap-save" onclick="saveProductPrices('${p.id}',${vs.length})">SAVE ✦</button>`;
+      grid.appendChild(card);
+    });
+  });
+  // Orders
+  const tbody=document.getElementById('orders-tbody');
+  const demoOrders=[
+    {tid:'SWK-2025-4521A',txn:'pay_Demo001',amount:899,name:'Priya Raghunathan',email:'priya@email.com',city:'Coimbatore',status:'Delivered',timestamp:'2025-03-18T09:00:00'},
+    {tid:'SWK-2025-3872B',txn:'pay_Demo002',amount:1698,name:'Rahul Joshi',email:'rahul@email.com',city:'Pune',status:'Shipped',timestamp:'2025-03-20T14:00:00'},
+    {tid:'SWK-2025-2231C',txn:'COD',amount:599,name:'Vikram Hegde',email:'vikram@email.com',city:'Mysuru',status:'Processing',timestamp:'2025-03-22T16:00:00'},
+  ];
+  const allOrders=[...demoOrders,...JSON.parse(localStorage.getItem('swastik_orders')||'[]')];
+  tbody.innerHTML=allOrders.map(o=>`<tr>
+    <td style="font-family:var(--font-display);font-size:.7rem;color:var(--gold-light)">${o.tid}</td>
+    <td>${o.name||'N/A'}<br><span style="font-size:.72rem;opacity:.5">${o.city||''}</span></td>
+    <td>Order</td>
+    <td style="color:var(--gold-light);font-weight:600">₹${o.amount||0}</td>
+    <td style="font-size:.72rem;opacity:.55">${o.txn||'N/A'}</td>
+    <td><span class="sbadge ${(o.status||'').toLowerCase()==='delivered'?'del':(o.status||'').toLowerCase()==='shipped'?'ship':'proc'}">${o.status||'Processing'}</span></td>
+    <td><select class="status-sel" onchange="updateStatus('${o.tid}',this.value)"><option>Processing</option><option>Shipped</option><option>Out for Delivery</option><option>Delivered</option></select></td>
+  </tr>`).join('');
+  // Load settings
+  const s=JSON.parse(localStorage.getItem('swastik_settings')||'{}');
+  if(s.name) document.getElementById('set-name').value=s.name;
+  if(s.phone) document.getElementById('set-phone').value=s.phone;
+  if(s.email) document.getElementById('set-email').value=s.email;
+  if(s.wa) document.getElementById('set-wa').value=s.wa;
+  if(s.addr) document.getElementById('set-addr').value=s.addr;
+  if(s.city) document.getElementById('set-city').value=s.city;
+}
+function saveProductPrices(pid, count){
+  const vs=[];
+  for(let i=0;i<count;i++){
+    const price=parseInt(document.getElementById(`ap-price-${pid}-${i}`).value)||0;
+    const stock=parseInt(document.getElementById(`ap-stock-${pid}-${i}`).value)||0;
+    const orig=productState[pid]?.variants[i]||{};
+    vs.push({...orig, price, stock});
+    const oosEl=document.getElementById(`ap-oos-${pid}-${i}`);
+    if(oosEl) oosEl.textContent=stock===0?'OOS':'';
+  }
+  productState[pid]={variants:vs};
+  saveProductState();
+  // Re-render that product card
+  const pcard=document.getElementById('pcard-'+pid);
+  if(pcard){
+    const allProducts=[...Object.values(PRODUCTS)].flat();
+    const p=allProducts.find(x=>x.id===pid);
+    if(p) pcard.outerHTML=renderCard(p);
+    attachVariantEvents();
+  }
+  toast('Saved! ✦',`Prices & stock updated for ${pid}.`,'✅');
+}
+function updateStatus(tid, status){
+  const orders=JSON.parse(localStorage.getItem('swastik_orders')||'[]');
+  const o=orders.find(x=>x.tid===tid);
+  if(o){o.status=status;localStorage.setItem('swastik_orders',JSON.stringify(orders));}
+  toast('Status Updated',`Order ${tid} → ${status}`,'✅');
+}
+function saveSettings(){
+  const s={
+    name:document.getElementById('set-name').value,
+    phone:document.getElementById('set-phone').value,
+    email:document.getElementById('set-email').value,
+    wa:document.getElementById('set-wa').value,
+    addr:document.getElementById('set-addr').value,
+    city:document.getElementById('set-city').value,
+    map:document.getElementById('set-map').value,
+  };
+  localStorage.setItem('swastik_settings',JSON.stringify(s));
+  // Apply to page
+  if(s.name) document.getElementById('owner-name').textContent=s.name;
+  if(s.phone) document.getElementById('owner-phone').textContent=s.phone;
+  if(s.email) document.getElementById('owner-email').textContent=s.email;
+  if(s.wa) document.getElementById('owner-wa').textContent=s.wa;
+  if(s.addr) document.getElementById('owner-address').textContent=s.addr;
+  if(s.city) document.getElementById('owner-city').textContent=s.city;
+  toast('Settings Saved! ✦','Business details updated on the website.','✅');
+}
+
+// Blog category filter
+function activateCf(btn){document.querySelectorAll('.cf-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}
+
+// Subscribe
+function subscribe(){
+  const e=document.getElementById('sub-email').value.trim();
+  if(!e){toast('Subscribe','Please enter your email.','⚠️');return;}
+  toast('Subscribed! 🙏','Welcome to Vedic Wisdom community!','📖');
+  document.getElementById('sub-email').value='';
+}
+
+// Smooth anchor nav
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t) t.scrollIntoView({behavior:'smooth'});
+    document.getElementById('nav-links').classList.remove('open');
+  });
+});
+
+// Load settings on page load
+(function applySettings(){
+  const s=JSON.parse(localStorage.getItem('swastik_settings')||'{}');
+  if(s.name) document.getElementById('owner-name').textContent=s.name;
+  if(s.phone) document.getElementById('owner-phone').textContent=s.phone;
+  if(s.email) document.getElementById('owner-email').textContent=s.email;
+  if(s.wa) document.getElementById('owner-wa').textContent=s.wa;
+  if(s.addr) document.getElementById('owner-address').textContent=s.addr;
+  if(s.city) document.getElementById('owner-city').textContent=s.city;
+})();
+
+// INIT
+renderProducts();
+attachVariantEvents();
+
+console.log(`卐 SWASTIK GOPADMA v2.0 卐
+Products Loaded: ${Object.values(PRODUCTS).flat().length} items across 6 categories
+Admin: admin / swastik2025
+ॐ शुद्धं पवित्रम् ॐ`);
+</script>
+</body>
+</html>
